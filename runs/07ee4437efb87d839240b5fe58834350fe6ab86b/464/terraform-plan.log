@@ -1,0 +1,998 @@
+Acquiring state lock. This may take a few moments...
+azurerm_network_interface.windows[2]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkInterfaces/win-nic-03]
+azurerm_public_ip.linux[0]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/publicIPAddresses/linux-pip-1]
+azurerm_subnet.pub_subnet: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/prodmyapp_virtual-network/subnets/prodmyapp_pub_subnet1]
+azurerm_windows_virtual_machine.windows_vm[2]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Compute/virtualMachines/windows-vm-03]
+azurerm_public_ip.windows[1]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/publicIPAddresses/win-public-ip-02]
+azurerm_windows_virtual_machine.windows_vm[0]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Compute/virtualMachines/windows-vm-01]
+azurerm_public_ip.linux[1]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/publicIPAddresses/linux-pip-2]
+azurerm_subnet.pvt_subnet: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/prodmyapp_virtual-network/subnets/prodmyapp_pvt_subnet2]
+azurerm_network_interface.linux[1]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkInterfaces/linux-nic-02]
+azurerm_network_interface.linux[0]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkInterfaces/linux-nic-01]
+azurerm_public_ip.windows[2]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/publicIPAddresses/win-public-ip-03]
+azurerm_subnet_network_security_group_association.pub_subnet_nsg: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/prodmyapp_virtual-network/subnets/prodmyapp_pub_subnet1]
+azurerm_windows_virtual_machine.windows_vm[1]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Compute/virtualMachines/windows-vm-02]
+azurerm_network_interface.windows[0]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkInterfaces/win-nic-01]
+azurerm_linux_virtual_machine.linux_vm[1]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Compute/virtualMachines/linux-vm-02]
+azurerm_policy_definition.require_deployment_id: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/providers/Microsoft.Authorization/policyDefinitions/require-deployment-id-tag]
+azurerm_subnet_network_security_group_association.pvt_subnet_nsg: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/prodmyapp_virtual-network/subnets/prodmyapp_pvt_subnet2]
+azurerm_virtual_network.prodmyapp_vnet: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/prodmyapp_virtual-network]
+azurerm_policy_definition.require_managed_by: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/providers/Microsoft.Authorization/policyDefinitions/require-managed-by-tag]
+data.azurerm_client_config.current: Reading...
+data.azurerm_client_config.current: Read complete after 0s [id=Y2xpZW50Q29uZmlncy9jbGllbnRJZD0wNGIwNzc5NS04ZGRiLTQ2MWEtYmJlZS0wMmY5ZTFiZjdiNDY7b2JqZWN0SWQ9M2E2NGFlZDktODY4NS00ZjYwLWJhZDQtYzdhMGIzZTBlNGQyO3N1YnNjcmlwdGlvbklkPTJiMmYwMmY3LWRkZTItNDdkYi05NzRjLTQ3ZDIxODI3MjFhZTt0ZW5hbnRJZD1mMTc1YzU2ZC00MDEzLTQyZmEtYTBlOC00MTAzZDIyNzZhMGQ=]
+azurerm_policy_definition.require_environment: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/providers/Microsoft.Authorization/policyDefinitions/require-environment-tag]
+azurerm_public_ip.windows[0]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/publicIPAddresses/win-public-ip-01]
+azurerm_network_interface.windows[1]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkInterfaces/win-nic-02]
+azurerm_network_security_group.prodmyapp_nsg_shared: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/open-security-group]
+azurerm_linux_virtual_machine.linux_vm[0]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Compute/virtualMachines/linux-vm-01]
+data.azuread_service_principal.prodmyapp: Reading...
+data.azuread_service_principal.prodmyapp: Read complete after 2s [id=3a64aed9-8685-4f60-bad4-c7a0b3e0e4d2]
+null_resource.validate_vm_size: Refreshing state... [id=2258612548479758890]
+azurerm_resource_group.prodmyapp: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup]
+azurerm_resource_group_policy_assignment.rg_managed_by: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Authorization/policyAssignments/rg-require-managed-by]
+azurerm_key_vault.prodmyapp: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.KeyVault/vaults/prodmyappkv]
+azurerm_resource_group_policy_assignment.rg_environment: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Authorization/policyAssignments/rg-require-environment]
+azurerm_user_assigned_identity.prodmyapp_sa_identity: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.ManagedIdentity/userAssignedIdentities/my-storage-identity]
+azurerm_resource_group_policy_assignment.rg_deployment_id: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Authorization/policyAssignments/rg-require-deployment-id]
+azurerm_key_vault_secret.github_token: Refreshing state... [id=https://prodmyappkv.vault.azure.net/secrets/githubtoken/587c6f85ea8b4c5d88740a0fe18cefca]
+azurerm_role_assignment.tf_kv_admin: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.KeyVault/vaults/prodmyappkv/providers/Microsoft.Authorization/roleAssignments/d9e169d9-c689-f1ee-c3a7-3bb1f5b6f37b]
+azurerm_key_vault_secret.sp_subscription_id: Refreshing state... [id=https://prodmyappkv.vault.azure.net/secrets/sp-subscription-id/380b5a9f9c6e44d4b10468e2b1df6ca1]
+azurerm_key_vault_secret.sp_client_secret: Refreshing state... [id=https://prodmyappkv.vault.azure.net/secrets/sp-client-secret/fdb2e08062544e90a6c3ecfb6a25897f]
+azurerm_key_vault_secret.sp_tenant_id: Refreshing state... [id=https://prodmyappkv.vault.azure.net/secrets/sp-tenant-id/abe0edc6d4dd450e86dc8ac101fb4212]
+azurerm_key_vault_secret.sp_client_id: Refreshing state... [id=https://prodmyappkv.vault.azure.net/secrets/sp-client-id/d7fb0faf32524ce48be82c8a1abaa501]
+azurerm_role_assignment.storage_kv_crypto: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.KeyVault/vaults/prodmyappkv/providers/Microsoft.Authorization/roleAssignments/d1648830-65b8-0064-48c5-441d75dea67a]
+azurerm_storage_account.prodmyapp: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Storage/storageAccounts/prodmyappsacmk01]
+time_sleep.wait_for_kv_rbac: Refreshing state... [id=2026-04-20T10:45:24Z]
+azurerm_storage_container.prodmyapp: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Storage/storageAccounts/prodmyappsacmk01/blobServices/default/containers/mytfstate]
+azurerm_key_vault_key.prodmyapp_key: Refreshing state... [id=https://prodmyappkv.vault.azure.net/keys/my-storage-cmk/51e0da2d9d5a4b53bfedce7faa0471cc]
+azurerm_role_assignment.terraform_backend_storage_access: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Storage/storageAccounts/prodmyappsacmk01/blobServices/default/containers/mytfstate/providers/Microsoft.Authorization/roleAssignments/52e4c051-0a07-1a95-7783-c649efbc7865]
+azurerm_disk_encryption_set.prod_des: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Compute/diskEncryptionSets/prod-des]
+azurerm_storage_account_customer_managed_key.prodmyapp_sa_cmk: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Storage/storageAccounts/prodmyappsacmk01]
+azurerm_role_assignment.des_kv_crypto: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.KeyVault/vaults/prodmyappkv/providers/Microsoft.Authorization/roleAssignments/6cad63bb-2172-dd68-e0d5-eb1c0c662ed3]
+time_sleep.wait_for_des_rbac: Refreshing state... [id=2026-04-26T15:25:29Z]
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  - destroy
+
+Terraform will perform the following actions:
+
+  # azurerm_linux_virtual_machine.linux_vm[0] will be destroyed
+  # (because azurerm_linux_virtual_machine.linux_vm is not in configuration)
+  - resource "azurerm_linux_virtual_machine" "linux_vm" {
+      - admin_username                                         = "adminuser" -> null
+      - allow_extension_operations                             = true -> null
+      - bypass_platform_safety_checks_on_user_schedule_enabled = false -> null
+      - computer_name                                          = "linux-vm-01" -> null
+      - disable_password_authentication                        = true -> null
+      - encryption_at_host_enabled                             = false -> null
+      - extensions_time_budget                                 = "PT1H30M" -> null
+      - id                                                     = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Compute/virtualMachines/linux-vm-01" -> null
+      - location                                               = "australiaeast" -> null
+      - max_bid_price                                          = -1 -> null
+      - name                                                   = "linux-vm-01" -> null
+      - network_interface_ids                                  = [
+          - "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkInterfaces/linux-nic-01",
+        ] -> null
+      - os_managed_disk_id                                     = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Compute/disks/linux-vm-01_OsDisk_1_ff70a8d0c1b04651b2bd086c6f6bad14" -> null
+      - patch_assessment_mode                                  = "ImageDefault" -> null
+      - patch_mode                                             = "ImageDefault" -> null
+      - platform_fault_domain                                  = -1 -> null
+      - priority                                               = "Regular" -> null
+      - private_ip_address                                     = "10.0.1.9" -> null
+      - private_ip_addresses                                   = [
+          - "10.0.1.9",
+        ] -> null
+      - provision_vm_agent                                     = true -> null
+      - public_ip_address                                      = "20.92.113.58" -> null
+      - public_ip_addresses                                    = [
+          - "20.92.113.58",
+        ] -> null
+      - resource_group_name                                    = "myTFResourceGroup" -> null
+      - secure_boot_enabled                                    = false -> null
+      - size                                                   = "Standard_B2s" -> null
+      - tags                                                   = {
+          - "Name"            = "linux-vm-01"
+          - "creation_run_id" = "463"
+          - "creation_time"   = "2026-05-17T18:19:40Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+      - virtual_machine_id                                     = "4cb62a55-938f-4361-92ed-86bba5a77571" -> null
+      - vm_agent_platform_updates_enabled                      = false -> null
+      - vtpm_enabled                                           = false -> null
+        # (14 unchanged attributes hidden)
+
+      - admin_ssh_key {
+          - public_key = <<-EOT
+                ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDfE03yW/3ptfsX5P/VSRu+Ib/0Ng/R++sJCpHw8OsP5U0D+pUa6pqcR0JLBnnEWYKrJcF6O7yIgKbUj0qhtCzyualq5+uhLrvAgKwfbY6oBXRvg+YuMjvkhSvwPhGrIjTUuppXx36/oqqmdLvUOW9yAsmT2E+CUfjuuTmWaLXzQcu+QTMtDL4ZLFssRtT73pq3apoVaATvEdR89OhPcZRvGToyfoa+J0W6zfXa6MISTJQdtW+qQckwJnDz0pS3qUdl7jj8D73YB2QrJu7dVWDnXXYPWRcK4fFxjbVOiRJOKGih0hsqL2P1Aq6vvK4nCHP+AandwytnfH6993g2mNU45ZtXPb4vER1foNnZ5tMYdNNlLKPsTL8zcX+boSlmKh8klk1d5+SjGQrt63AZgn/LsVighynYp/3ds9HUNxBlnJ20P1vjTWpLN15Nb1m1O8uoCrJxuR3DnsAxLi41zx3wkFfPV01B4sihtLEHkAqpbhR3d83rZUbrZKMJZAnrnhDKBZvJCPC6rEwF2EeN+dqt8dExlvwU9OlBWGD6ehuTZq1SvN8xZwcL3AQngebeZRaU2uW9/0aVw5TBPBcZXgUQiyf0VuR3Ph7rUwvYDvJ+CuJah89auI2nBkCVcO9319CzRQ/6oqxz6VdjTHRUb6ubqgIBS9S4vhspVe3wSogHnw== root@ip-172-31-34-216.us-east-2.compute.internal
+            EOT -> null
+          - username   = "adminuser" -> null
+        }
+
+      - os_disk {
+          - caching                          = "ReadWrite" -> null
+          - disk_encryption_set_id           = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/MYTFRESOURCEGROUP/providers/Microsoft.Compute/diskEncryptionSets/prod-des" -> null
+          - disk_size_gb                     = 30 -> null
+          - id                               = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Compute/disks/linux-vm-01_OsDisk_1_ff70a8d0c1b04651b2bd086c6f6bad14" -> null
+          - name                             = "linux-vm-01_OsDisk_1_ff70a8d0c1b04651b2bd086c6f6bad14" -> null
+          - storage_account_type             = "Standard_LRS" -> null
+          - write_accelerator_enabled        = false -> null
+            # (2 unchanged attributes hidden)
+        }
+
+      - plan {
+          - name      = "centos-8-3-free" -> null
+          - product   = "centos-8-3-free" -> null
+          - publisher = "cognosys" -> null
+        }
+
+      - source_image_reference {
+          - offer     = "centos-8-3-free" -> null
+          - publisher = "cognosys" -> null
+          - sku       = "centos-8-3-free" -> null
+          - version   = "1.2019.0810" -> null
+        }
+    }
+
+  # azurerm_linux_virtual_machine.linux_vm[1] will be destroyed
+  # (because azurerm_linux_virtual_machine.linux_vm is not in configuration)
+  - resource "azurerm_linux_virtual_machine" "linux_vm" {
+      - admin_username                                         = "adminuser" -> null
+      - allow_extension_operations                             = true -> null
+      - bypass_platform_safety_checks_on_user_schedule_enabled = false -> null
+      - computer_name                                          = "linux-vm-02" -> null
+      - disable_password_authentication                        = true -> null
+      - encryption_at_host_enabled                             = false -> null
+      - extensions_time_budget                                 = "PT1H30M" -> null
+      - id                                                     = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Compute/virtualMachines/linux-vm-02" -> null
+      - location                                               = "australiaeast" -> null
+      - max_bid_price                                          = -1 -> null
+      - name                                                   = "linux-vm-02" -> null
+      - network_interface_ids                                  = [
+          - "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkInterfaces/linux-nic-02",
+        ] -> null
+      - os_managed_disk_id                                     = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Compute/disks/linux-vm-02_OsDisk_1_3068f53320da4651a5043c71a5a86177" -> null
+      - patch_assessment_mode                                  = "ImageDefault" -> null
+      - patch_mode                                             = "ImageDefault" -> null
+      - platform_fault_domain                                  = -1 -> null
+      - priority                                               = "Regular" -> null
+      - private_ip_address                                     = "10.0.1.8" -> null
+      - private_ip_addresses                                   = [
+          - "10.0.1.8",
+        ] -> null
+      - provision_vm_agent                                     = true -> null
+      - public_ip_address                                      = "20.213.137.160" -> null
+      - public_ip_addresses                                    = [
+          - "20.213.137.160",
+        ] -> null
+      - resource_group_name                                    = "myTFResourceGroup" -> null
+      - secure_boot_enabled                                    = false -> null
+      - size                                                   = "Standard_B2s" -> null
+      - tags                                                   = {
+          - "Name"            = "linux-vm-02"
+          - "creation_run_id" = "463"
+          - "creation_time"   = "2026-05-17T18:19:40Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+      - virtual_machine_id                                     = "d1248ec6-ac0c-4efb-82e6-fa0a4e9a6fc3" -> null
+      - vm_agent_platform_updates_enabled                      = false -> null
+      - vtpm_enabled                                           = false -> null
+        # (14 unchanged attributes hidden)
+
+      - admin_ssh_key {
+          - public_key = <<-EOT
+                ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDfE03yW/3ptfsX5P/VSRu+Ib/0Ng/R++sJCpHw8OsP5U0D+pUa6pqcR0JLBnnEWYKrJcF6O7yIgKbUj0qhtCzyualq5+uhLrvAgKwfbY6oBXRvg+YuMjvkhSvwPhGrIjTUuppXx36/oqqmdLvUOW9yAsmT2E+CUfjuuTmWaLXzQcu+QTMtDL4ZLFssRtT73pq3apoVaATvEdR89OhPcZRvGToyfoa+J0W6zfXa6MISTJQdtW+qQckwJnDz0pS3qUdl7jj8D73YB2QrJu7dVWDnXXYPWRcK4fFxjbVOiRJOKGih0hsqL2P1Aq6vvK4nCHP+AandwytnfH6993g2mNU45ZtXPb4vER1foNnZ5tMYdNNlLKPsTL8zcX+boSlmKh8klk1d5+SjGQrt63AZgn/LsVighynYp/3ds9HUNxBlnJ20P1vjTWpLN15Nb1m1O8uoCrJxuR3DnsAxLi41zx3wkFfPV01B4sihtLEHkAqpbhR3d83rZUbrZKMJZAnrnhDKBZvJCPC6rEwF2EeN+dqt8dExlvwU9OlBWGD6ehuTZq1SvN8xZwcL3AQngebeZRaU2uW9/0aVw5TBPBcZXgUQiyf0VuR3Ph7rUwvYDvJ+CuJah89auI2nBkCVcO9319CzRQ/6oqxz6VdjTHRUb6ubqgIBS9S4vhspVe3wSogHnw== root@ip-172-31-34-216.us-east-2.compute.internal
+            EOT -> null
+          - username   = "adminuser" -> null
+        }
+
+      - os_disk {
+          - caching                          = "ReadWrite" -> null
+          - disk_encryption_set_id           = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/MYTFRESOURCEGROUP/providers/Microsoft.Compute/diskEncryptionSets/prod-des" -> null
+          - disk_size_gb                     = 30 -> null
+          - id                               = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Compute/disks/linux-vm-02_OsDisk_1_3068f53320da4651a5043c71a5a86177" -> null
+          - name                             = "linux-vm-02_OsDisk_1_3068f53320da4651a5043c71a5a86177" -> null
+          - storage_account_type             = "Standard_LRS" -> null
+          - write_accelerator_enabled        = false -> null
+            # (2 unchanged attributes hidden)
+        }
+
+      - plan {
+          - name      = "centos-8-3-free" -> null
+          - product   = "centos-8-3-free" -> null
+          - publisher = "cognosys" -> null
+        }
+
+      - source_image_reference {
+          - offer     = "centos-8-3-free" -> null
+          - publisher = "cognosys" -> null
+          - sku       = "centos-8-3-free" -> null
+          - version   = "1.2019.0810" -> null
+        }
+    }
+
+  # azurerm_network_interface.linux[0] will be destroyed
+  # (because azurerm_network_interface.linux is not in configuration)
+  - resource "azurerm_network_interface" "linux" {
+      - accelerated_networking_enabled = false -> null
+      - applied_dns_servers            = [] -> null
+      - dns_servers                    = [] -> null
+      - id                             = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkInterfaces/linux-nic-01" -> null
+      - internal_domain_name_suffix    = "aikmyarzzy4exd3osmq1xlngxb.px.internal.cloudapp.net" -> null
+      - ip_forwarding_enabled          = false -> null
+      - location                       = "australiaeast" -> null
+      - mac_address                    = "60-45-BD-C4-90-27" -> null
+      - name                           = "linux-nic-01" -> null
+      - private_ip_address             = "10.0.1.9" -> null
+      - private_ip_addresses           = [
+          - "10.0.1.9",
+        ] -> null
+      - resource_group_name            = "myTFResourceGroup" -> null
+      - tags                           = {
+          - "Name"            = "nic-prodmyapp-01"
+          - "creation_run_id" = "447"
+          - "creation_time"   = "2026-05-13T11:32:49Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+      - virtual_machine_id             = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Compute/virtualMachines/linux-vm-01" -> null
+        # (4 unchanged attributes hidden)
+
+      - ip_configuration {
+          - name                                               = "internal" -> null
+          - primary                                            = true -> null
+          - private_ip_address                                 = "10.0.1.9" -> null
+          - private_ip_address_allocation                      = "Dynamic" -> null
+          - private_ip_address_version                         = "IPv4" -> null
+          - public_ip_address_id                               = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/publicIPAddresses/linux-pip-1" -> null
+          - subnet_id                                          = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/prodmyapp_virtual-network/subnets/prodmyapp_pub_subnet1" -> null
+            # (1 unchanged attribute hidden)
+        }
+    }
+
+  # azurerm_network_interface.linux[1] will be destroyed
+  # (because azurerm_network_interface.linux is not in configuration)
+  - resource "azurerm_network_interface" "linux" {
+      - accelerated_networking_enabled = false -> null
+      - applied_dns_servers            = [] -> null
+      - dns_servers                    = [] -> null
+      - id                             = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkInterfaces/linux-nic-02" -> null
+      - internal_domain_name_suffix    = "aikmyarzzy4exd3osmq1xlngxb.px.internal.cloudapp.net" -> null
+      - ip_forwarding_enabled          = false -> null
+      - location                       = "australiaeast" -> null
+      - mac_address                    = "60-45-BD-E6-F5-F3" -> null
+      - name                           = "linux-nic-02" -> null
+      - private_ip_address             = "10.0.1.8" -> null
+      - private_ip_addresses           = [
+          - "10.0.1.8",
+        ] -> null
+      - resource_group_name            = "myTFResourceGroup" -> null
+      - tags                           = {
+          - "Name"            = "nic-prodmyapp-02"
+          - "creation_run_id" = "447"
+          - "creation_time"   = "2026-05-13T11:32:49Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+      - virtual_machine_id             = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Compute/virtualMachines/linux-vm-02" -> null
+        # (4 unchanged attributes hidden)
+
+      - ip_configuration {
+          - name                                               = "internal" -> null
+          - primary                                            = true -> null
+          - private_ip_address                                 = "10.0.1.8" -> null
+          - private_ip_address_allocation                      = "Dynamic" -> null
+          - private_ip_address_version                         = "IPv4" -> null
+          - public_ip_address_id                               = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/publicIPAddresses/linux-pip-2" -> null
+          - subnet_id                                          = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/prodmyapp_virtual-network/subnets/prodmyapp_pub_subnet1" -> null
+            # (1 unchanged attribute hidden)
+        }
+    }
+
+  # azurerm_network_interface.windows[0] will be destroyed
+  # (because azurerm_network_interface.windows is not in configuration)
+  - resource "azurerm_network_interface" "windows" {
+      - accelerated_networking_enabled = false -> null
+      - applied_dns_servers            = [] -> null
+      - dns_servers                    = [] -> null
+      - id                             = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkInterfaces/win-nic-01" -> null
+      - internal_domain_name_suffix    = "aikmyarzzy4exd3osmq1xlngxb.px.internal.cloudapp.net" -> null
+      - ip_forwarding_enabled          = false -> null
+      - location                       = "australiaeast" -> null
+      - mac_address                    = "7C-ED-8D-A2-40-8E" -> null
+      - name                           = "win-nic-01" -> null
+      - private_ip_address             = "10.0.1.7" -> null
+      - private_ip_addresses           = [
+          - "10.0.1.7",
+        ] -> null
+      - resource_group_name            = "myTFResourceGroup" -> null
+      - tags                           = {
+          - "Name"            = "nic-windows-01"
+          - "creation_run_id" = "447"
+          - "creation_time"   = "2026-05-13T11:32:49Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+      - virtual_machine_id             = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Compute/virtualMachines/windows-vm-01" -> null
+        # (4 unchanged attributes hidden)
+
+      - ip_configuration {
+          - name                                               = "ip_config_windows" -> null
+          - primary                                            = true -> null
+          - private_ip_address                                 = "10.0.1.7" -> null
+          - private_ip_address_allocation                      = "Dynamic" -> null
+          - private_ip_address_version                         = "IPv4" -> null
+          - public_ip_address_id                               = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/publicIPAddresses/win-public-ip-01" -> null
+          - subnet_id                                          = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/prodmyapp_virtual-network/subnets/prodmyapp_pub_subnet1" -> null
+            # (1 unchanged attribute hidden)
+        }
+    }
+
+  # azurerm_network_interface.windows[1] will be destroyed
+  # (because azurerm_network_interface.windows is not in configuration)
+  - resource "azurerm_network_interface" "windows" {
+      - accelerated_networking_enabled = false -> null
+      - applied_dns_servers            = [] -> null
+      - dns_servers                    = [] -> null
+      - id                             = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkInterfaces/win-nic-02" -> null
+      - internal_domain_name_suffix    = "aikmyarzzy4exd3osmq1xlngxb.px.internal.cloudapp.net" -> null
+      - ip_forwarding_enabled          = false -> null
+      - location                       = "australiaeast" -> null
+      - mac_address                    = "60-45-BD-E4-EC-EB" -> null
+      - name                           = "win-nic-02" -> null
+      - private_ip_address             = "10.0.1.5" -> null
+      - private_ip_addresses           = [
+          - "10.0.1.5",
+        ] -> null
+      - resource_group_name            = "myTFResourceGroup" -> null
+      - tags                           = {
+          - "Name"            = "nic-windows-02"
+          - "creation_run_id" = "447"
+          - "creation_time"   = "2026-05-13T11:32:49Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+      - virtual_machine_id             = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Compute/virtualMachines/windows-vm-02" -> null
+        # (4 unchanged attributes hidden)
+
+      - ip_configuration {
+          - name                                               = "ip_config_windows" -> null
+          - primary                                            = true -> null
+          - private_ip_address                                 = "10.0.1.5" -> null
+          - private_ip_address_allocation                      = "Dynamic" -> null
+          - private_ip_address_version                         = "IPv4" -> null
+          - public_ip_address_id                               = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/publicIPAddresses/win-public-ip-02" -> null
+          - subnet_id                                          = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/prodmyapp_virtual-network/subnets/prodmyapp_pub_subnet1" -> null
+            # (1 unchanged attribute hidden)
+        }
+    }
+
+  # azurerm_network_interface.windows[2] will be destroyed
+  # (because azurerm_network_interface.windows is not in configuration)
+  - resource "azurerm_network_interface" "windows" {
+      - accelerated_networking_enabled = false -> null
+      - applied_dns_servers            = [] -> null
+      - dns_servers                    = [] -> null
+      - id                             = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkInterfaces/win-nic-03" -> null
+      - internal_domain_name_suffix    = "aikmyarzzy4exd3osmq1xlngxb.px.internal.cloudapp.net" -> null
+      - ip_forwarding_enabled          = false -> null
+      - location                       = "australiaeast" -> null
+      - mac_address                    = "60-45-BD-C4-AC-FD" -> null
+      - name                           = "win-nic-03" -> null
+      - private_ip_address             = "10.0.1.6" -> null
+      - private_ip_addresses           = [
+          - "10.0.1.6",
+        ] -> null
+      - resource_group_name            = "myTFResourceGroup" -> null
+      - tags                           = {
+          - "Name"            = "nic-windows-03"
+          - "creation_run_id" = "447"
+          - "creation_time"   = "2026-05-13T11:32:49Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+      - virtual_machine_id             = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Compute/virtualMachines/windows-vm-03" -> null
+        # (4 unchanged attributes hidden)
+
+      - ip_configuration {
+          - name                                               = "ip_config_windows" -> null
+          - primary                                            = true -> null
+          - private_ip_address                                 = "10.0.1.6" -> null
+          - private_ip_address_allocation                      = "Dynamic" -> null
+          - private_ip_address_version                         = "IPv4" -> null
+          - public_ip_address_id                               = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/publicIPAddresses/win-public-ip-03" -> null
+          - subnet_id                                          = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/prodmyapp_virtual-network/subnets/prodmyapp_pub_subnet1" -> null
+            # (1 unchanged attribute hidden)
+        }
+    }
+
+  # azurerm_network_security_group.prodmyapp_nsg_shared will be destroyed
+  # (because azurerm_network_security_group.prodmyapp_nsg_shared is not in configuration)
+  - resource "azurerm_network_security_group" "prodmyapp_nsg_shared" {
+      - id                  = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/open-security-group" -> null
+      - location            = "australiaeast" -> null
+      - name                = "open-security-group" -> null
+      - resource_group_name = "myTFResourceGroup" -> null
+      - security_rule       = [
+          - {
+              - access                                     = "Allow"
+              - destination_address_prefix                 = "*"
+              - destination_address_prefixes               = []
+              - destination_application_security_group_ids = []
+              - destination_port_range                     = "*"
+              - destination_port_ranges                    = []
+              - direction                                  = "Outbound"
+              - name                                       = "AllowAllOutbound"
+              - priority                                   = 200
+              - protocol                                   = "*"
+              - source_address_prefix                      = "*"
+              - source_address_prefixes                    = []
+              - source_application_security_group_ids      = []
+              - source_port_range                          = "*"
+              - source_port_ranges                         = []
+                # (1 unchanged attribute hidden)
+            },
+          - {
+              - access                                     = "Allow"
+              - destination_address_prefix                 = "*"
+              - destination_address_prefixes               = []
+              - destination_application_security_group_ids = []
+              - destination_port_range                     = "22"
+              - destination_port_ranges                    = []
+              - direction                                  = "Inbound"
+              - name                                       = "Allow-SSH"
+              - priority                                   = 100
+              - protocol                                   = "Tcp"
+              - source_address_prefix                      = "*"
+              - source_address_prefixes                    = []
+              - source_application_security_group_ids      = []
+              - source_port_range                          = "*"
+              - source_port_ranges                         = []
+                # (1 unchanged attribute hidden)
+            },
+          - {
+              - access                                     = "Allow"
+              - destination_address_prefix                 = "*"
+              - destination_address_prefixes               = []
+              - destination_application_security_group_ids = []
+              - destination_port_range                     = "3389"
+              - destination_port_ranges                    = []
+              - direction                                  = "Inbound"
+              - name                                       = "Allow-RDP"
+              - priority                                   = 110
+              - protocol                                   = "Tcp"
+              - source_address_prefix                      = "*"
+              - source_address_prefixes                    = []
+              - source_application_security_group_ids      = []
+              - source_port_range                          = "*"
+              - source_port_ranges                         = []
+                # (1 unchanged attribute hidden)
+            },
+          - {
+              - access                                     = "Deny"
+              - destination_address_prefix                 = "10.0.2.0/24"
+              - destination_address_prefixes               = []
+              - destination_application_security_group_ids = []
+              - destination_port_range                     = "*"
+              - destination_port_ranges                    = []
+              - direction                                  = "Inbound"
+              - name                                       = "Deny-Inbound-Private-Subnet"
+              - priority                                   = 120
+              - protocol                                   = "*"
+              - source_address_prefix                      = "Internet"
+              - source_address_prefixes                    = []
+              - source_application_security_group_ids      = []
+              - source_port_range                          = "*"
+              - source_port_ranges                         = []
+                # (1 unchanged attribute hidden)
+            },
+        ] -> null
+      - tags                = {
+          - "Name"            = "nsg-open_prodmyapp"
+          - "creation_run_id" = "435"
+          - "creation_time"   = "2026-05-02T14:45:24Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+    }
+
+  # azurerm_public_ip.linux[0] will be destroyed
+  # (because azurerm_public_ip.linux is not in configuration)
+  - resource "azurerm_public_ip" "linux" {
+      - allocation_method       = "Static" -> null
+      - ddos_protection_mode    = "VirtualNetworkInherited" -> null
+      - id                      = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/publicIPAddresses/linux-pip-1" -> null
+      - idle_timeout_in_minutes = 4 -> null
+      - ip_address              = "20.92.113.58" -> null
+      - ip_tags                 = {} -> null
+      - ip_version              = "IPv4" -> null
+      - location                = "australiaeast" -> null
+      - name                    = "linux-pip-1" -> null
+      - resource_group_name     = "myTFResourceGroup" -> null
+      - sku                     = "Standard" -> null
+      - sku_tier                = "Regional" -> null
+      - tags                    = {
+          - "Name"            = "pip-prodmyapp-1"
+          - "creation_run_id" = "447"
+          - "creation_time"   = "2026-05-13T11:32:49Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+      - zones                   = [] -> null
+        # (5 unchanged attributes hidden)
+    }
+
+  # azurerm_public_ip.linux[1] will be destroyed
+  # (because azurerm_public_ip.linux is not in configuration)
+  - resource "azurerm_public_ip" "linux" {
+      - allocation_method       = "Static" -> null
+      - ddos_protection_mode    = "VirtualNetworkInherited" -> null
+      - id                      = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/publicIPAddresses/linux-pip-2" -> null
+      - idle_timeout_in_minutes = 4 -> null
+      - ip_address              = "20.213.137.160" -> null
+      - ip_tags                 = {} -> null
+      - ip_version              = "IPv4" -> null
+      - location                = "australiaeast" -> null
+      - name                    = "linux-pip-2" -> null
+      - resource_group_name     = "myTFResourceGroup" -> null
+      - sku                     = "Standard" -> null
+      - sku_tier                = "Regional" -> null
+      - tags                    = {
+          - "Name"            = "pip-prodmyapp-2"
+          - "creation_run_id" = "447"
+          - "creation_time"   = "2026-05-13T11:32:49Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+      - zones                   = [] -> null
+        # (5 unchanged attributes hidden)
+    }
+
+  # azurerm_public_ip.windows[0] will be destroyed
+  # (because azurerm_public_ip.windows is not in configuration)
+  - resource "azurerm_public_ip" "windows" {
+      - allocation_method       = "Static" -> null
+      - ddos_protection_mode    = "VirtualNetworkInherited" -> null
+      - id                      = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/publicIPAddresses/win-public-ip-01" -> null
+      - idle_timeout_in_minutes = 4 -> null
+      - ip_address              = "20.213.45.238" -> null
+      - ip_tags                 = {} -> null
+      - ip_version              = "IPv4" -> null
+      - location                = "australiaeast" -> null
+      - name                    = "win-public-ip-01" -> null
+      - resource_group_name     = "myTFResourceGroup" -> null
+      - sku                     = "Standard" -> null
+      - sku_tier                = "Regional" -> null
+      - tags                    = {
+          - "Name"            = "pub-ip-win-01"
+          - "creation_run_id" = "447"
+          - "creation_time"   = "2026-05-13T11:32:49Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+      - zones                   = [] -> null
+        # (5 unchanged attributes hidden)
+    }
+
+  # azurerm_public_ip.windows[1] will be destroyed
+  # (because azurerm_public_ip.windows is not in configuration)
+  - resource "azurerm_public_ip" "windows" {
+      - allocation_method       = "Static" -> null
+      - ddos_protection_mode    = "VirtualNetworkInherited" -> null
+      - id                      = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/publicIPAddresses/win-public-ip-02" -> null
+      - idle_timeout_in_minutes = 4 -> null
+      - ip_address              = "20.70.168.70" -> null
+      - ip_tags                 = {} -> null
+      - ip_version              = "IPv4" -> null
+      - location                = "australiaeast" -> null
+      - name                    = "win-public-ip-02" -> null
+      - resource_group_name     = "myTFResourceGroup" -> null
+      - sku                     = "Standard" -> null
+      - sku_tier                = "Regional" -> null
+      - tags                    = {
+          - "Name"            = "pub-ip-win-02"
+          - "creation_run_id" = "447"
+          - "creation_time"   = "2026-05-13T11:32:49Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+      - zones                   = [] -> null
+        # (5 unchanged attributes hidden)
+    }
+
+  # azurerm_public_ip.windows[2] will be destroyed
+  # (because azurerm_public_ip.windows is not in configuration)
+  - resource "azurerm_public_ip" "windows" {
+      - allocation_method       = "Static" -> null
+      - ddos_protection_mode    = "VirtualNetworkInherited" -> null
+      - id                      = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/publicIPAddresses/win-public-ip-03" -> null
+      - idle_timeout_in_minutes = 4 -> null
+      - ip_address              = "20.213.58.221" -> null
+      - ip_tags                 = {} -> null
+      - ip_version              = "IPv4" -> null
+      - location                = "australiaeast" -> null
+      - name                    = "win-public-ip-03" -> null
+      - resource_group_name     = "myTFResourceGroup" -> null
+      - sku                     = "Standard" -> null
+      - sku_tier                = "Regional" -> null
+      - tags                    = {
+          - "Name"            = "pub-ip-win-03"
+          - "creation_run_id" = "447"
+          - "creation_time"   = "2026-05-13T11:32:49Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+      - zones                   = [] -> null
+        # (5 unchanged attributes hidden)
+    }
+
+  # azurerm_subnet.pub_subnet will be destroyed
+  # (because azurerm_subnet.pub_subnet is not in configuration)
+  - resource "azurerm_subnet" "pub_subnet" {
+      - address_prefixes                              = [
+          - "10.0.1.0/28",
+        ] -> null
+      - default_outbound_access_enabled               = true -> null
+      - id                                            = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/prodmyapp_virtual-network/subnets/prodmyapp_pub_subnet1" -> null
+      - name                                          = "prodmyapp_pub_subnet1" -> null
+      - private_endpoint_network_policies             = "Disabled" -> null
+      - private_link_service_network_policies_enabled = true -> null
+      - resource_group_name                           = "myTFResourceGroup" -> null
+      - service_endpoint_policy_ids                   = [] -> null
+      - service_endpoints                             = [] -> null
+      - virtual_network_name                          = "prodmyapp_virtual-network" -> null
+        # (1 unchanged attribute hidden)
+    }
+
+  # azurerm_subnet.pvt_subnet will be destroyed
+  # (because azurerm_subnet.pvt_subnet is not in configuration)
+  - resource "azurerm_subnet" "pvt_subnet" {
+      - address_prefixes                              = [
+          - "10.0.2.0/24",
+        ] -> null
+      - default_outbound_access_enabled               = true -> null
+      - id                                            = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/prodmyapp_virtual-network/subnets/prodmyapp_pvt_subnet2" -> null
+      - name                                          = "prodmyapp_pvt_subnet2" -> null
+      - private_endpoint_network_policies             = "Disabled" -> null
+      - private_link_service_network_policies_enabled = true -> null
+      - resource_group_name                           = "myTFResourceGroup" -> null
+      - service_endpoint_policy_ids                   = [] -> null
+      - service_endpoints                             = [] -> null
+      - virtual_network_name                          = "prodmyapp_virtual-network" -> null
+        # (1 unchanged attribute hidden)
+    }
+
+  # azurerm_subnet_network_security_group_association.pub_subnet_nsg will be destroyed
+  # (because azurerm_subnet_network_security_group_association.pub_subnet_nsg is not in configuration)
+  - resource "azurerm_subnet_network_security_group_association" "pub_subnet_nsg" {
+      - id                        = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/prodmyapp_virtual-network/subnets/prodmyapp_pub_subnet1" -> null
+      - network_security_group_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/open-security-group" -> null
+      - subnet_id                 = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/prodmyapp_virtual-network/subnets/prodmyapp_pub_subnet1" -> null
+    }
+
+  # azurerm_subnet_network_security_group_association.pvt_subnet_nsg will be destroyed
+  # (because azurerm_subnet_network_security_group_association.pvt_subnet_nsg is not in configuration)
+  - resource "azurerm_subnet_network_security_group_association" "pvt_subnet_nsg" {
+      - id                        = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/prodmyapp_virtual-network/subnets/prodmyapp_pvt_subnet2" -> null
+      - network_security_group_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/open-security-group" -> null
+      - subnet_id                 = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/prodmyapp_virtual-network/subnets/prodmyapp_pvt_subnet2" -> null
+    }
+
+  # azurerm_virtual_network.prodmyapp_vnet will be destroyed
+  # (because azurerm_virtual_network.prodmyapp_vnet is not in configuration)
+  - resource "azurerm_virtual_network" "prodmyapp_vnet" {
+      - address_space                  = [
+          - "10.0.0.0/16",
+        ] -> null
+      - dns_servers                    = [] -> null
+      - flow_timeout_in_minutes        = 0 -> null
+      - guid                           = "02cc1402-ce39-4b3c-8fae-9321bbada6b9" -> null
+      - id                             = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/prodmyapp_virtual-network" -> null
+      - location                       = "australiaeast" -> null
+      - name                           = "prodmyapp_virtual-network" -> null
+      - private_endpoint_vnet_policies = "Disabled" -> null
+      - resource_group_name            = "myTFResourceGroup" -> null
+      - subnet                         = [
+          - {
+              - address_prefixes                              = [
+                  - "10.0.1.0/28",
+                ]
+              - default_outbound_access_enabled               = true
+              - delegation                                    = []
+              - id                                            = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/prodmyapp_virtual-network/subnets/prodmyapp_pub_subnet1"
+              - name                                          = "prodmyapp_pub_subnet1"
+              - private_endpoint_network_policies             = "Disabled"
+              - private_link_service_network_policies_enabled = true
+              - security_group                                = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/open-security-group"
+              - service_endpoint_policy_ids                   = []
+              - service_endpoints                             = []
+                # (1 unchanged attribute hidden)
+            },
+          - {
+              - address_prefixes                              = [
+                  - "10.0.2.0/24",
+                ]
+              - default_outbound_access_enabled               = true
+              - delegation                                    = []
+              - id                                            = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/prodmyapp_virtual-network/subnets/prodmyapp_pvt_subnet2"
+              - name                                          = "prodmyapp_pvt_subnet2"
+              - private_endpoint_network_policies             = "Disabled"
+              - private_link_service_network_policies_enabled = true
+              - security_group                                = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/open-security-group"
+              - service_endpoint_policy_ids                   = []
+              - service_endpoints                             = []
+                # (1 unchanged attribute hidden)
+            },
+        ] -> null
+      - tags                           = {
+          - "Name"            = "vnet-prodmyapp"
+          - "creation_run_id" = "local-2026-04-26T11:11:10Z-default"
+          - "creation_time"   = "2026-04-26T11:11:10Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+        # (2 unchanged attributes hidden)
+    }
+
+  # azurerm_windows_virtual_machine.windows_vm[0] will be destroyed
+  # (because azurerm_windows_virtual_machine.windows_vm is not in configuration)
+  - resource "azurerm_windows_virtual_machine" "windows_vm" {
+      - admin_password                                         = (sensitive value) -> null
+      - admin_username                                         = "adminuser" -> null
+      - allow_extension_operations                             = true -> null
+      - automatic_updates_enabled                              = true -> null
+      - bypass_platform_safety_checks_on_user_schedule_enabled = false -> null
+      - computer_name                                          = "windows-vm-01" -> null
+      - enable_automatic_updates                               = true -> null
+      - encryption_at_host_enabled                             = false -> null
+      - extensions_time_budget                                 = "PT1H30M" -> null
+      - hotpatching_enabled                                    = false -> null
+      - id                                                     = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Compute/virtualMachines/windows-vm-01" -> null
+      - location                                               = "australiaeast" -> null
+      - max_bid_price                                          = -1 -> null
+      - name                                                   = "windows-vm-01" -> null
+      - network_interface_ids                                  = [
+          - "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkInterfaces/win-nic-01",
+        ] -> null
+      - os_managed_disk_id                                     = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Compute/disks/windows-vm-01_OsDisk_1_dd2d1231bad24609a15da7818bc6cb50" -> null
+      - patch_assessment_mode                                  = "ImageDefault" -> null
+      - patch_mode                                             = "AutomaticByOS" -> null
+      - platform_fault_domain                                  = -1 -> null
+      - priority                                               = "Regular" -> null
+      - private_ip_address                                     = "10.0.1.7" -> null
+      - private_ip_addresses                                   = [
+          - "10.0.1.7",
+        ] -> null
+      - provision_vm_agent                                     = true -> null
+      - public_ip_address                                      = "20.213.45.238" -> null
+      - public_ip_addresses                                    = [
+          - "20.213.45.238",
+        ] -> null
+      - resource_group_name                                    = "myTFResourceGroup" -> null
+      - secure_boot_enabled                                    = false -> null
+      - size                                                   = "Standard_B2s" -> null
+      - tags                                                   = {
+          - "Name"            = "vm-windows-01"
+          - "creation_run_id" = "447"
+          - "creation_time"   = "2026-05-13T11:32:49Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+      - virtual_machine_id                                     = "8f6f2176-bc01-4b7c-8d47-823327b9b16a" -> null
+      - vm_agent_platform_updates_enabled                      = true -> null
+      - vtpm_enabled                                           = false -> null
+        # (15 unchanged attributes hidden)
+
+      - boot_diagnostics {
+          - storage_account_uri = "https://prodmyappsacmk01.blob.core.windows.net/" -> null
+        }
+
+      - os_disk {
+          - caching                          = "ReadWrite" -> null
+          - disk_encryption_set_id           = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/MYTFRESOURCEGROUP/providers/Microsoft.Compute/diskEncryptionSets/prod-des" -> null
+          - disk_size_gb                     = 127 -> null
+          - id                               = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Compute/disks/windows-vm-01_OsDisk_1_dd2d1231bad24609a15da7818bc6cb50" -> null
+          - name                             = "windows-vm-01_OsDisk_1_dd2d1231bad24609a15da7818bc6cb50" -> null
+          - storage_account_type             = "Standard_LRS" -> null
+          - write_accelerator_enabled        = false -> null
+            # (2 unchanged attributes hidden)
+        }
+
+      - source_image_reference {
+          - offer     = "WindowsServer" -> null
+          - publisher = "MicrosoftWindowsServer" -> null
+          - sku       = "2019-Datacenter" -> null
+          - version   = "17763.8511.260305" -> null
+        }
+    }
+
+  # azurerm_windows_virtual_machine.windows_vm[1] will be destroyed
+  # (because azurerm_windows_virtual_machine.windows_vm is not in configuration)
+  - resource "azurerm_windows_virtual_machine" "windows_vm" {
+      - admin_password                                         = (sensitive value) -> null
+      - admin_username                                         = "adminuser" -> null
+      - allow_extension_operations                             = true -> null
+      - automatic_updates_enabled                              = true -> null
+      - bypass_platform_safety_checks_on_user_schedule_enabled = false -> null
+      - computer_name                                          = "windows-vm-02" -> null
+      - enable_automatic_updates                               = true -> null
+      - encryption_at_host_enabled                             = false -> null
+      - extensions_time_budget                                 = "PT1H30M" -> null
+      - hotpatching_enabled                                    = false -> null
+      - id                                                     = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Compute/virtualMachines/windows-vm-02" -> null
+      - location                                               = "australiaeast" -> null
+      - max_bid_price                                          = -1 -> null
+      - name                                                   = "windows-vm-02" -> null
+      - network_interface_ids                                  = [
+          - "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkInterfaces/win-nic-02",
+        ] -> null
+      - os_managed_disk_id                                     = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Compute/disks/windows-vm-02_OsDisk_1_5776aab1c2e241e1a649506cbf1e13ac" -> null
+      - patch_assessment_mode                                  = "ImageDefault" -> null
+      - patch_mode                                             = "AutomaticByOS" -> null
+      - platform_fault_domain                                  = -1 -> null
+      - priority                                               = "Regular" -> null
+      - private_ip_address                                     = "10.0.1.5" -> null
+      - private_ip_addresses                                   = [
+          - "10.0.1.5",
+        ] -> null
+      - provision_vm_agent                                     = true -> null
+      - public_ip_address                                      = "20.70.168.70" -> null
+      - public_ip_addresses                                    = [
+          - "20.70.168.70",
+        ] -> null
+      - resource_group_name                                    = "myTFResourceGroup" -> null
+      - secure_boot_enabled                                    = false -> null
+      - size                                                   = "Standard_B2s" -> null
+      - tags                                                   = {
+          - "Name"            = "vm-windows-02"
+          - "creation_run_id" = "447"
+          - "creation_time"   = "2026-05-13T11:32:49Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+      - virtual_machine_id                                     = "3079832c-2845-4805-a396-fb3f2b85e873" -> null
+      - vm_agent_platform_updates_enabled                      = true -> null
+      - vtpm_enabled                                           = false -> null
+        # (15 unchanged attributes hidden)
+
+      - boot_diagnostics {
+          - storage_account_uri = "https://prodmyappsacmk01.blob.core.windows.net/" -> null
+        }
+
+      - os_disk {
+          - caching                          = "ReadWrite" -> null
+          - disk_encryption_set_id           = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/MYTFRESOURCEGROUP/providers/Microsoft.Compute/diskEncryptionSets/prod-des" -> null
+          - disk_size_gb                     = 127 -> null
+          - id                               = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Compute/disks/windows-vm-02_OsDisk_1_5776aab1c2e241e1a649506cbf1e13ac" -> null
+          - name                             = "windows-vm-02_OsDisk_1_5776aab1c2e241e1a649506cbf1e13ac" -> null
+          - storage_account_type             = "Standard_LRS" -> null
+          - write_accelerator_enabled        = false -> null
+            # (2 unchanged attributes hidden)
+        }
+
+      - source_image_reference {
+          - offer     = "WindowsServer" -> null
+          - publisher = "MicrosoftWindowsServer" -> null
+          - sku       = "2019-Datacenter" -> null
+          - version   = "17763.8511.260305" -> null
+        }
+    }
+
+  # azurerm_windows_virtual_machine.windows_vm[2] will be destroyed
+  # (because azurerm_windows_virtual_machine.windows_vm is not in configuration)
+  - resource "azurerm_windows_virtual_machine" "windows_vm" {
+      - admin_password                                         = (sensitive value) -> null
+      - admin_username                                         = "adminuser" -> null
+      - allow_extension_operations                             = true -> null
+      - automatic_updates_enabled                              = true -> null
+      - bypass_platform_safety_checks_on_user_schedule_enabled = false -> null
+      - computer_name                                          = "windows-vm-03" -> null
+      - enable_automatic_updates                               = true -> null
+      - encryption_at_host_enabled                             = false -> null
+      - extensions_time_budget                                 = "PT1H30M" -> null
+      - hotpatching_enabled                                    = false -> null
+      - id                                                     = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Compute/virtualMachines/windows-vm-03" -> null
+      - location                                               = "australiaeast" -> null
+      - max_bid_price                                          = -1 -> null
+      - name                                                   = "windows-vm-03" -> null
+      - network_interface_ids                                  = [
+          - "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkInterfaces/win-nic-03",
+        ] -> null
+      - os_managed_disk_id                                     = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Compute/disks/windows-vm-03_OsDisk_1_aeb1f8bd02a64796806a105116767565" -> null
+      - patch_assessment_mode                                  = "ImageDefault" -> null
+      - patch_mode                                             = "AutomaticByOS" -> null
+      - platform_fault_domain                                  = -1 -> null
+      - priority                                               = "Regular" -> null
+      - private_ip_address                                     = "10.0.1.6" -> null
+      - private_ip_addresses                                   = [
+          - "10.0.1.6",
+        ] -> null
+      - provision_vm_agent                                     = true -> null
+      - public_ip_address                                      = "20.213.58.221" -> null
+      - public_ip_addresses                                    = [
+          - "20.213.58.221",
+        ] -> null
+      - resource_group_name                                    = "myTFResourceGroup" -> null
+      - secure_boot_enabled                                    = false -> null
+      - size                                                   = "Standard_B2s" -> null
+      - tags                                                   = {
+          - "Name"            = "vm-windows-03"
+          - "creation_run_id" = "447"
+          - "creation_time"   = "2026-05-13T11:32:49Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+      - virtual_machine_id                                     = "78758891-8063-476c-b749-6f9395cd9870" -> null
+      - vm_agent_platform_updates_enabled                      = true -> null
+      - vtpm_enabled                                           = false -> null
+        # (15 unchanged attributes hidden)
+
+      - boot_diagnostics {
+          - storage_account_uri = "https://prodmyappsacmk01.blob.core.windows.net/" -> null
+        }
+
+      - os_disk {
+          - caching                          = "ReadWrite" -> null
+          - disk_encryption_set_id           = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/MYTFRESOURCEGROUP/providers/Microsoft.Compute/diskEncryptionSets/prod-des" -> null
+          - disk_size_gb                     = 127 -> null
+          - id                               = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Compute/disks/windows-vm-03_OsDisk_1_aeb1f8bd02a64796806a105116767565" -> null
+          - name                             = "windows-vm-03_OsDisk_1_aeb1f8bd02a64796806a105116767565" -> null
+          - storage_account_type             = "Standard_LRS" -> null
+          - write_accelerator_enabled        = false -> null
+            # (2 unchanged attributes hidden)
+        }
+
+      - source_image_reference {
+          - offer     = "WindowsServer" -> null
+          - publisher = "MicrosoftWindowsServer" -> null
+          - sku       = "2019-Datacenter" -> null
+          - version   = "17763.8511.260305" -> null
+        }
+    }
+
+Plan: 0 to add, 0 to change, 21 to destroy.
+
+Changes to Outputs:
+  ~ debug_tags = {
+      ~ creation_run_id = "463" -> "464"
+      ~ creation_time   = "2026-05-17T18:19:40Z" -> (known after apply)
+        # (3 unchanged attributes hidden)
+    }
+
+Warning: Argument is deprecated
+
+  with azurerm_storage_account_customer_managed_key.prodmyapp_sa_cmk,
+  on main.tf line 457, in resource "azurerm_storage_account_customer_managed_key" "prodmyapp_sa_cmk":
+ 457:   key_vault_id       = azurerm_key_vault.prodmyapp.id
+
+`key_vault_id` has been deprecated in favour of `key_vault_key_id` and will
+be removed in v5.0 of the AzureRM provider
+
+(and 2 more similar warnings elsewhere)
+
+─────────────────────────────────────────────────────────────────────────────
+
+Saved the plan to: tfplan
+
+To perform exactly these actions, run the following command to apply:
+    terraform apply "tfplan"
+Releasing state lock. This may take a few moments...
