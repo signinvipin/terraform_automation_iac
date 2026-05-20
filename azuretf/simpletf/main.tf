@@ -1616,6 +1616,215 @@ Deployment of VMs:
 
 */
 
+# Multi-Region Enterprise Networking
+
+locals {
+
+  regions = {
+    australiaeast = {
+      location = "Australia East"
+      cidr     = "10.10.0.0/16"
+    }
+
+    centralindia = {
+      location = "Central India"
+      cidr     = "10.20.0.0/16"
+    }
+  }
+
+  subnet_roles = {
+
+    bastion = {
+      cidr = {
+        australiaeast = "10.10.1.0/24"
+        centralindia  = "10.20.1.0/24"
+      }
+    }
+
+    firewall = {
+      cidr = {
+        australiaeast = "10.10.2.0/24"
+        centralindia  = "10.20.2.0/24"
+      }
+    }
+
+    gateway = {
+      cidr = {
+        australiaeast = "10.10.3.0/24"
+        centralindia  = "10.20.3.0/24"
+      }
+    }
+
+    management = {
+      cidr = {
+        australiaeast = "10.10.4.0/24"
+        centralindia  = "10.20.4.0/24"
+      }
+    }
+
+    web = {
+      cidr = {
+        australiaeast = "10.10.10.0/24"
+        centralindia  = "10.20.10.0/24"
+      }
+    }
+
+    app = {
+      cidr = {
+        australiaeast = "10.10.20.0/24"
+        centralindia  = "10.20.20.0/24"
+      }
+    }
+
+    api = {
+      cidr = {
+        australiaeast = "10.10.30.0/24"
+        centralindia  = "10.20.30.0/24"
+      }
+    }
+
+    worker = {
+      cidr = {
+        australiaeast = "10.10.40.0/24"
+        centralindia  = "10.20.40.0/24"
+      }
+    }
+
+    db = {
+      cidr = {
+        australiaeast = "10.10.50.0/24"
+        centralindia  = "10.20.50.0/24"
+      }
+    }
+
+    monitoring = {
+      cidr = {
+        australiaeast = "10.10.60.0/24"
+        centralindia  = "10.20.60.0/24"
+      }
+    }
+
+    cicd = {
+      cidr = {
+        australiaeast = "10.10.70.0/24"
+        centralindia  = "10.20.70.0/24"
+      }
+    }
+
+    private_endpoint = {
+      cidr = {
+        australiaeast = "10.10.80.0/24"
+        centralindia  = "10.20.80.0/24"
+      }
+    }
+  }
+}
+
+# Multi-Region VNets
+
+resource "azurerm_virtual_network" "regional_vnets" {
+
+  for_each = local.regions
+
+  name = "vnet-${each.key}"
+
+  location = each.value.location
+
+  resource_group_name = azurerm_resource_group.prodmyapp.name
+
+  address_space = [each.value.cidr]
+
+  tags = merge(local.common_tags, {
+    Name = "vnet-${each.key}"
+    #    Region = each.key
+  })
+
+  lifecycle {
+    ignore_changes = [
+      tags["creation_run_id"],
+      tags["creation_time"]
+    ]
+  }
+}
+
+# Enterprise Role-Based Subnets
+
+resource "azurerm_subnet" "regional_subnets" {
+
+  for_each = merge([
+    for region_key, region_value in local.regions : {
+      for subnet_name, subnet_value in local.subnet_roles :
+      "${region_key}-${subnet_name}" => {
+        region      = region_key
+        subnet_name = subnet_name
+        cidr        = subnet_value.cidr[region_key]
+      }
+    }
+  ]...)
+
+  name = "${each.value.subnet_name}-subnet"
+
+  #  name = (
+  #    each.value.subnet_name == "bastion" ?
+  #    "AzureBastionSubnet" :
+  #    each.value.subnet_name == "firewall" ?
+  #    "AzureFirewallSubnet" :
+  #    each.value.subnet_name == "gateway" ?
+  #    "GatewaySubnet" :
+  #    "${each.value.subnet_name}-subnet"
+  #  )
+
+  resource_group_name = azurerm_resource_group.prodmyapp.name
+
+  virtual_network_name = azurerm_virtual_network.regional_vnets[
+    each.value.region
+  ].name
+
+  address_prefixes = [each.value.cidr]
+}
+
+# Role based dedicated NSGs Per Subnet
+
+resource "azurerm_network_security_group" "regional_nsgs" {
+
+  for_each = merge([
+    for region_key, region_value in local.regions : {
+      for subnet_name, subnet_value in local.subnet_roles :
+      "${region_key}-${subnet_name}" => {
+        region      = region_key
+        subnet_name = subnet_name
+      }
+    }
+  ]...)
+
+  name = "nsg-${each.value.region}-${each.value.subnet_name}"
+
+  location = local.regions[each.value.region].location
+
+  resource_group_name = azurerm_resource_group.prodmyapp.name
+
+  tags = merge(local.common_tags, {
+    Name = "nsg-${each.value.region}-${each.value.subnet_name}"
+  })
+
+  lifecycle {
+    ignore_changes = [
+      tags["creation_run_id"],
+      tags["creation_time"]
+    ]
+  }
+}
+
+# Subnet-NSG Associations
+
+resource "azurerm_subnet_network_security_group_association" "regional_assoc" {
+
+  for_each = azurerm_subnet.regional_subnets
+
+  subnet_id = each.value.id
+
+  network_security_group_id = azurerm_network_security_group.regional_nsgs[each.key].id
+}
 
 
 
