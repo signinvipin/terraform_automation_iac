@@ -624,7 +624,7 @@ a) a VM needs special access different from subnet, b) need temporary debugging
 */
 
 ## Virtual Network w/ cidr 10.0.0.0/16 and Subnets
-
+/*
 # Network Security Group (All allowed for testing)
 resource "azurerm_network_security_group" "prodmyapp_nsg_shared" {
   name                = "open-security-group"
@@ -701,7 +701,8 @@ resource "azurerm_network_security_group" "prodmyapp_nsg_shared" {
     ]
   }
 }
-
+*/
+/*
 # VNET
 resource "azurerm_virtual_network" "prodmyapp_vnet" {
   name                = "prodmyapp_virtual-network"
@@ -730,9 +731,10 @@ resource "azurerm_virtual_network" "prodmyapp_vnet" {
     ]
   }
 }
+*/
 
 # Subnets w/ Network Security Group
-
+/*
 # public subnet (10.0.1.0/28) 
 resource "azurerm_subnet" "pub_subnet" {
   name                 = "prodmyapp_pub_subnet1"
@@ -762,6 +764,7 @@ resource "azurerm_subnet_network_security_group_association" "pvt_subnet_nsg" {
   subnet_id                 = azurerm_subnet.pvt_subnet.id
   network_security_group_id = azurerm_network_security_group.prodmyapp_nsg_shared.id
 }
+*/
 
 /*
 # Public IP (used to expose VMs' to internet)
@@ -1321,10 +1324,11 @@ keys and passwords for VM access and other resources.
 We also have local.vm_sizes, local.vm_images, var.environment. We use them to create multi-VMs in same region.
 Linux VMs w/ public subnet & Windows VMs w/ private subnet.
 
-Implement with use of key `count` - Public IP, NIC, separate VM for Linux and Windows.
+Implementing with use of key `count` - Public IP, NIC, separate VMs for Linux and Windows.
  
 */
 
+/*
 #Set VM count
 variable "linux_vm_count" {
   type    = number
@@ -1597,3 +1601,36 @@ resource "azurerm_windows_virtual_machine" "windows_vm" {
     ]
   }
 }
+*/
+
+###               PHASE-VII               ###
+
+/*
+Deployment of VMs:
+ - multi-region,
+ - role-based separate subnets for VMs
+ - Separate NSGs for separate role-based subnets/NICs for VMs
+ - role-based multiple VMs, 
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
