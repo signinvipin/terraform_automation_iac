@@ -1612,6 +1612,12 @@ Deployment of VMs:
  - Separate NSGs for separate role-based subnets/NICs for VMs
  - role-based multiple VMs, 
 
+Implement production-grade networking that will actually support future workloads.
+We will add VNet Peering, Route Tables (UDRs), NAT Gateway, Public IP for NAT, Route Table Associations.
+This is realistic and directly useful later for VMs, AKS, private workloads, CI/CD runners, application traffic.
+
+Secure Outbound Internet via NAT Gateway - Public-ish Subnets - For web, app, api, cicd, worker.
+Traffic Segmentation via Restrictive Route Tables - Private Subnets - For db, private_endpoint, management.
 
 
 */
@@ -1831,13 +1837,213 @@ resource "azurerm_subnet_network_security_group_association" "regional_assoc" {
 
 
 
+# Network classification for resources
+locals {
 
+  nat_enabled_subnets = [
+    "web",
+    "app",
+    "api",
+    "worker",
+    "cicd"
+  ]
 
+  private_subnets = [
+    "db",
+    "management",
+    "private_endpoint"
+  ]
 
+}
 
+# Public IP for NAT Gateway
 
+resource "azurerm_public_ip" "nat_gateway_pubip" {
 
+  for_each = local.regions
 
+  name                = "nat-pubip-${each.key}"
+  location            = each.key
+  resource_group_name = azurerm_resource_group.prodmyapp.name
+
+  allocation_method = "Static"
+  sku               = "Standard"
+
+  tags = merge(local.common_tags, {
+    Name = "nat-gateway-pubip-${each.key}"
+  })
+
+  lifecycle {
+    ignore_changes = [
+      tags["creation_run_id"],
+      tags["creation_time"]
+    ]
+  }
+}
+
+# NAT Gateway
+
+resource "azurerm_nat_gateway" "regional_nat" {
+
+  for_each = local.regions
+
+  name                = "nat-${each.key}"
+  location            = each.key
+  resource_group_name = azurerm_resource_group.prodmyapp.name
+
+  sku_name = "Standard"
+
+  tags = merge(local.common_tags, {
+    Name = "nat-gateway-${each.key}$"
+  })
+
+  lifecycle {
+    ignore_changes = [
+      tags["creation_run_id"],
+      tags["creation_time"]
+    ]
+  }
+}
+
+# Associate Public IP to NAT
+
+resource "azurerm_nat_gateway_public_ip_association" "nat_assoc" {
+
+  for_each = local.regions
+
+  nat_gateway_id       = azurerm_nat_gateway.regional_nat[each.key].id
+  public_ip_address_id = azurerm_public_ip.nat_gateway_pubip[each.key].id
+}
+
+# Associate NAT Gateway to Subnets
+
+resource "azurerm_subnet_nat_gateway_association" "nat_subnet_assoc" {
+
+  for_each = {
+    for subnet_key, subnet in azurerm_subnet.regional_subnets :
+    subnet_key => subnet
+    if contains(local.nat_enabled_subnets, split("-", subnet_key)[1])
+  }
+
+  subnet_id = each.value.id
+  nat_gateway_id = azurerm_nat_gateway.regional_nat[
+    split("-", each.key)[0]
+  ].id
+}
+
+# Route Tables
+
+# Public Route Table
+resource "azurerm_route_table" "public_rt" {
+
+  for_each = local.regions
+
+  name                = "rt-public-${each.key}"
+  location            = each.key
+  resource_group_name = azurerm_resource_group.prodmyapp.name
+
+  route {
+    name           = "internet-route"
+    address_prefix = "0.0.0.0/0"
+    next_hop_type  = "Internet"
+  }
+
+  tags = merge(local.common_tags, {
+    Name = "route-table-pub-${each.key}"
+  })
+
+  lifecycle {
+    ignore_changes = [
+      tags["creation_run_id"],
+      tags["creation_time"]
+    ]
+  }
+}
+
+# Private Route Table
+resource "azurerm_route_table" "private_rt" {
+
+  for_each = local.regions
+
+  name                = "rt-private-${each.key}"
+  location            = each.key
+  resource_group_name = azurerm_resource_group.prodmyapp.name
+
+  tags = merge(local.common_tags, {
+    Name = "route-table-pvt-${each.key}"
+  })
+
+  lifecycle {
+    ignore_changes = [
+      tags["creation_run_id"],
+      tags["creation_time"]
+    ]
+  }
+}
+
+# Associate Public Route Table and Subnet
+resource "azurerm_subnet_route_table_association" "public_assoc" {
+
+  for_each = {
+    for subnet_key, subnet in azurerm_subnet.regional_subnets :
+    subnet_key => subnet
+    if contains(local.nat_enabled_subnets, split("-", subnet_key)[1])
+  }
+
+  subnet_id = each.value.id
+
+  route_table_id = azurerm_route_table.public_rt[
+    split("-", each.key)[0]
+  ].id
+}
+
+# Associate Private Route Table and Subnet
+resource "azurerm_subnet_route_table_association" "private_assoc" {
+
+  for_each = {
+    for subnet_key, subnet in azurerm_subnet.regional_subnets :
+    subnet_key => subnet
+    if contains(local.private_subnets, split("-", subnet_key)[1])
+  }
+
+  subnet_id = each.value.id
+
+  route_table_id = azurerm_route_table.private_rt[
+    split("-", each.key)[0]
+  ].id
+}
+
+# VNet Peering 
+
+# Central India > Australia East
+resource "azurerm_virtual_network_peering" "central_to_aus" {
+
+  name = "centralindia-to-australiaeast"
+
+  resource_group_name = azurerm_resource_group.prodmyapp.name
+
+  virtual_network_name = azurerm_virtual_network.regional_vnets["centralindia"].name
+
+  remote_virtual_network_id = azurerm_virtual_network.regional_vnets["australiaeast"].id
+
+  allow_virtual_network_access = true
+  allow_forwarded_traffic      = true
+}
+
+# Australia East > Central India
+resource "azurerm_virtual_network_peering" "aus_to_central" {
+
+  name = "australiaeast-to-centralindia"
+
+  resource_group_name = azurerm_resource_group.prodmyapp.name
+
+  virtual_network_name = azurerm_virtual_network.regional_vnets["australiaeast"].name
+
+  remote_virtual_network_id = azurerm_virtual_network.regional_vnets["centralindia"].id
+
+  allow_virtual_network_access = true
+  allow_forwarded_traffic      = true
+}
 
 
 
