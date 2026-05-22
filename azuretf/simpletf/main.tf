@@ -1941,7 +1941,7 @@ resource "azurerm_subnet_nat_gateway_association" "nat_subnet_assoc" {
 }
 
 # Route Tables
-/*
+
 # Public Route Table
 resource "azurerm_route_table" "public_rt" {
 
@@ -1990,6 +1990,7 @@ resource "azurerm_route_table" "private_rt" {
   }
 }
 
+/*
 # Associate Public Route Table and Subnet
 resource "azurerm_subnet_route_table_association" "public_assoc" {
 
