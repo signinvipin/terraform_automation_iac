@@ -1827,7 +1827,14 @@ resource "azurerm_network_security_group" "regional_nsgs" {
 
 resource "azurerm_subnet_network_security_group_association" "regional_assoc" {
 
-  for_each = azurerm_subnet.regional_subnets
+  for_each = {
+    for k, v in azurerm_subnet.regional_subnets :
+    k => v
+    if !contains(
+      ["bastion", "firewall", "gateway"],
+      split("-", k)[1]
+    )
+  }
 
   subnet_id = each.value.id
 
