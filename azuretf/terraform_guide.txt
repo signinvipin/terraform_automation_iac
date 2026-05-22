@@ -5129,6 +5129,32 @@ Potential orphans
 This is the correct architecture for orphan detection.
 ---------------------------------------------------------------------------------------------------------------
 
+# Production-grade networking baseline architecture.
+
+Region A (Australia East)
+ ├── VNet
+ ├── Public subnets
+ ├── Private subnets
+ ├── NSGs
+ ├── Route tables
+ ├── NAT Gateway
+ └── Peering
+
+Region B (Central India)
+ ├── VNet
+ ├── Public subnets
+ ├── Private subnets
+ ├── NSGs
+ ├── Route tables
+ ├── NAT Gateway
+ └── Peering
+ 
+#Recommended Enterprise Design
+> Public-ish workloads
+Use: NAT Gateway, no custom UDR
+
+> Private workloads
+Use: Azure Firewall/NVA/no outbound route
 ---------------------------------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------------------------------

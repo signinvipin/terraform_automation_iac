@@ -1622,6 +1622,7 @@ Traffic Segmentation via Restrictive Route Tables - Private Subnets - For db, pr
 
 */
 
+## Networking Layer
 # Multi-Region Enterprise Networking
 
 locals {
@@ -1768,17 +1769,17 @@ resource "azurerm_subnet" "regional_subnets" {
     }
   ]...)
 
-  name = "${each.value.subnet_name}-subnet"
+  #name = "${each.value.subnet_name}-subnet"
 
-  #  name = (
-  #    each.value.subnet_name == "bastion" ?
-  #    "AzureBastionSubnet" :
-  #    each.value.subnet_name == "firewall" ?
-  #    "AzureFirewallSubnet" :
-  #    each.value.subnet_name == "gateway" ?
-  #    "GatewaySubnet" :
-  #    "${each.value.subnet_name}-subnet"
-  #  )
+  name = (
+    each.value.subnet_name == "bastion" ?
+    "AzureBastionSubnet" :
+    each.value.subnet_name == "firewall" ?
+    "AzureFirewallSubnet" :
+    each.value.subnet_name == "gateway" ?
+    "GatewaySubnet" :
+    "${each.value.subnet_name}-subnet"
+  )
 
   resource_group_name = azurerm_resource_group.prodmyapp.name
 
@@ -2046,6 +2047,127 @@ resource "azurerm_virtual_network_peering" "aus_to_central" {
 }
 
 
+###               PHASE-IX               ###
 
+# WorkLoad/Compute Layer
 
+/*
+Implement compute in THIS order > 1. Bastion Host > 2. Jumpbox VM > 3. Private App VM > 4. VMSS > 5. Load Balancer
+> 6. Autoscaling > 7. Managed Identity > 8. Monitoring > 9. AKS
+*/
+/*
+# Private DNS Implementation
+# dns.tf
 
+resource "azurerm_private_dns_zone" "kv_dns" {
+  name                = "privatelink.vaultcore.azure.net"
+  resource_group_name = azurerm_resource_group.prodmyapp.name
+
+  tags = local.common_tags
+}
+
+resource "azurerm_private_dns_zone_virtual_network_link" "kv_dns_links" {
+  for_each = azurerm_virtual_network.regional_vnets
+
+  name                  = "kv-dns-link-${each.key}"
+  resource_group_name   = azurerm_resource_group.prodmyapp.name
+  private_dns_zone_name = azurerm_private_dns_zone.kv_dns.name
+  virtual_network_id    = each.value.id
+
+  registration_enabled = false
+
+  tags = local.common_tags
+}
+
+# Azure Bastion
+
+# Azure Bastion Public IP
+
+resource "azurerm_public_ip" "bastion_pip" {
+  name                = "pip-bastion"
+  location            = azurerm_resource_group.prodmyapp.location
+  resource_group_name = azurerm_resource_group.prodmyapp.name
+
+  allocation_method = "Static"
+  sku               = "Standard"
+
+  tags = local.common_tags
+}
+
+# Bastion Host
+resource "azurerm_bastion_host" "main" {
+  name                = "bastion-prodmyapp"
+  location            = azurerm_resource_group.prodmyapp.location
+  resource_group_name = azurerm_resource_group.prodmyapp.name
+
+  sku = "Standard"
+
+  ip_configuration {
+    name                 = "configuration"
+    subnet_id            = azurerm_subnet.regional_subnets["centralindia-bastion"].id
+    public_ip_address_id = azurerm_public_ip.bastion_pip.id
+  }
+
+  tags = local.common_tags
+}
+
+# Jumpbox VM
+# compute.tf
+
+# NIC for Jumpbox/Linux VM
+
+resource "azurerm_network_interface" "jumpbox_nic" {
+  name                = "nic-jumpbox"
+  location            = azurerm_resource_group.prodmyapp.location
+  resource_group_name = azurerm_resource_group.prodmyapp.name
+
+  ip_configuration {
+    name                          = "internal"
+    subnet_id                     = azurerm_subnet.regional_subnets["centralindia-management"].id
+    private_ip_address_allocation = "Dynamic"
+  }
+
+  tags = local.common_tags
+}
+
+# Linux VM
+
+resource "azurerm_linux_virtual_machine" "jumpbox" {
+  name                = "vm-jumpbox"
+  resource_group_name = azurerm_resource_group.prodmyapp.name
+  location            = azurerm_resource_group.prodmyapp.location
+  size                = "Standard_B2s"
+
+  admin_username = "azureuser"
+
+  disable_password_authentication = true
+
+  network_interface_ids = [
+    azurerm_network_interface.jumpbox_nic.id
+  ]
+
+  admin_ssh_key {
+    username   = "azureuser"
+    public_key = file("~/.ssh/id_rsa.pub")
+  }
+
+  os_disk {
+    caching              = "ReadWrite"
+    storage_account_type = "StandardSSD_LRS"
+  }
+
+  source_image_reference {
+    publisher = "Canonical"
+    offer     = "0001-com-ubuntu-server-jammy"
+    sku       = "22_04-lts"
+    version   = "latest"
+  }
+
+  identity {
+    type = "SystemAssigned"
+  }
+
+  tags = local.common_tags
+}
+
+*/
