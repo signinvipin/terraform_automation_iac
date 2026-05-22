@@ -1755,7 +1755,7 @@ resource "azurerm_virtual_network" "regional_vnets" {
 }
 
 # Enterprise Role-Based Subnets
-/*
+
 resource "azurerm_subnet" "regional_subnets" {
 
   for_each = merge([
@@ -1769,17 +1769,17 @@ resource "azurerm_subnet" "regional_subnets" {
     }
   ]...)
 
-  name = "${each.value.subnet_name}-subnet"
+  #name = "${each.value.subnet_name}-subnet"
 
-#  name = (
-#    each.value.subnet_name == "bastion" ?
-#    "AzureBastionSubnet" :
-#    each.value.subnet_name == "firewall" ?
-#    "AzureFirewallSubnet" :
-#    each.value.subnet_name == "gateway" ?
-#    "GatewaySubnet" :
-#    "${each.value.subnet_name}-subnet"
-#  )
+  name = (
+    each.value.subnet_name == "bastion" ?
+    "AzureBastionSubnet" :
+    each.value.subnet_name == "firewall" ?
+    "AzureFirewallSubnet" :
+    each.value.subnet_name == "gateway" ?
+    "GatewaySubnet" :
+    "${each.value.subnet_name}-subnet"
+  )
 
   resource_group_name = azurerm_resource_group.prodmyapp.name
 
@@ -1792,7 +1792,7 @@ resource "azurerm_subnet" "regional_subnets" {
 
 
 # Role based dedicated NSGs (Per Subnet)
-
+/*
 resource "azurerm_network_security_group" "regional_nsgs" {
 
   for_each = merge([
