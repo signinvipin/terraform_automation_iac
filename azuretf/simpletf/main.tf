@@ -1824,7 +1824,7 @@ resource "azurerm_network_security_group" "regional_nsgs" {
 }
 
 # Subnet-NSG Associations
-/*
+
 resource "azurerm_subnet_network_security_group_association" "regional_assoc" {
 
   for_each = azurerm_subnet.regional_subnets
@@ -1837,7 +1837,7 @@ resource "azurerm_subnet_network_security_group_association" "regional_assoc" {
 
 
 
-
+/*
 
 # Network classification for resources
 locals {
