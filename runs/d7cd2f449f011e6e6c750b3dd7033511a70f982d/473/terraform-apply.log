@@ -1,0 +1,30 @@
+Acquiring state lock. This may take a few moments...
+azurerm_public_ip.nat_gateway_pubip["australiaeast"]: Creating...
+azurerm_public_ip.nat_gateway_pubip["australiaeast"]: Creation complete after 5s [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/publicIPAddresses/nat-pubip-australiaeast]
+azurerm_nat_gateway.regional_nat["australiaeast"]: Creating...
+azurerm_nat_gateway.regional_nat["australiaeast"]: Still creating... [00m10s elapsed]
+azurerm_nat_gateway.regional_nat["australiaeast"]: Creation complete after 13s [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/natGateways/nat-australiaeast]
+azurerm_public_ip.nat_gateway_pubip["centralindia"]: Creating...
+azurerm_public_ip.nat_gateway_pubip["centralindia"]: Creation complete after 6s [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/publicIPAddresses/nat-pubip-centralindia]
+azurerm_nat_gateway.regional_nat["centralindia"]: Creating...
+azurerm_nat_gateway.regional_nat["centralindia"]: Still creating... [00m10s elapsed]
+azurerm_nat_gateway.regional_nat["centralindia"]: Creation complete after 15s [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/natGateways/nat-centralindia]
+azurerm_nat_gateway_public_ip_association.nat_assoc["centralindia"]: Creating...
+azurerm_nat_gateway_public_ip_association.nat_assoc["centralindia"]: Still creating... [00m10s elapsed]
+azurerm_nat_gateway_public_ip_association.nat_assoc["centralindia"]: Creation complete after 16s [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/natGateways/nat-centralindia|/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/publicIPAddresses/nat-pubip-centralindia]
+azurerm_nat_gateway_public_ip_association.nat_assoc["australiaeast"]: Creating...
+azurerm_nat_gateway_public_ip_association.nat_assoc["australiaeast"]: Still creating... [00m10s elapsed]
+azurerm_nat_gateway_public_ip_association.nat_assoc["australiaeast"]: Creation complete after 15s [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/natGateways/nat-australiaeast|/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/publicIPAddresses/nat-pubip-australiaeast]
+Releasing state lock. This may take a few moments...
+
+Apply complete! Resources: 6 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+debug_tags = {
+  "creation_run_id" = "473"
+  "creation_time" = "2026-05-22T17:23:34Z"
+  "deployment_id" = "prodmyapp"
+  "environment" = "prod"
+  "managed_by" = "terraform"
+}
