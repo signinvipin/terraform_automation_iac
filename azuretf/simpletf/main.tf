@@ -1844,7 +1844,7 @@ resource "azurerm_subnet_network_security_group_association" "regional_assoc" {
 
 
 
-/*
+
 
 # Network classification for resources
 locals {
@@ -1925,7 +1925,7 @@ resource "azurerm_nat_gateway_public_ip_association" "nat_assoc" {
 }
 
 # Associate NAT Gateway to Subnets
-
+/*
 resource "azurerm_subnet_nat_gateway_association" "nat_subnet_assoc" {
 
   for_each = {
