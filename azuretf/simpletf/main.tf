@@ -2024,7 +2024,7 @@ resource "azurerm_subnet_route_table_association" "private_assoc" {
 }
 
 # VNet Peering 
-/*
+
 # Central India > Australia East
 resource "azurerm_virtual_network_peering" "central_to_aus" {
 
@@ -2054,7 +2054,7 @@ resource "azurerm_virtual_network_peering" "aus_to_central" {
   allow_virtual_network_access = true
   allow_forwarded_traffic      = true
 }
-*/
+
 
 ###               PHASE-IX               ###
 
