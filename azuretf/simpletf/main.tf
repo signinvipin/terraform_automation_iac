@@ -1925,7 +1925,7 @@ resource "azurerm_nat_gateway_public_ip_association" "nat_assoc" {
 }
 
 # Associate NAT Gateway to Subnets
-/*
+
 resource "azurerm_subnet_nat_gateway_association" "nat_subnet_assoc" {
 
   for_each = {
@@ -1941,7 +1941,7 @@ resource "azurerm_subnet_nat_gateway_association" "nat_subnet_assoc" {
 }
 
 # Route Tables
-
+/*
 # Public Route Table
 resource "azurerm_route_table" "public_rt" {
 
