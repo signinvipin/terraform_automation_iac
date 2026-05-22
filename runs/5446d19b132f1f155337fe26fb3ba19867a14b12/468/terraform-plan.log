@@ -1,0 +1,1649 @@
+Acquiring state lock. This may take a few moments...
+azurerm_subnet.regional_subnets["australiaeast-web"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/web-subnet]
+azurerm_subnet_network_security_group_association.regional_assoc["centralindia-api"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/api-subnet]
+azurerm_network_security_group.regional_nsgs["centralindia-api"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-centralindia-api]
+azurerm_route_table.private_rt["centralindia"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/routeTables/rt-private-centralindia]
+azurerm_subnet_route_table_association.private_assoc["centralindia-db"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/db-subnet]
+azurerm_virtual_network_peering.central_to_aus: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/virtualNetworkPeerings/centralindia-to-australiaeast]
+azurerm_subnet_network_security_group_association.regional_assoc["centralindia-worker"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/worker-subnet]
+azurerm_subnet_route_table_association.public_assoc["centralindia-cicd"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/cicd-subnet]
+azurerm_subnet_network_security_group_association.regional_assoc["centralindia-private_endpoint"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/private_endpoint-subnet]
+azurerm_subnet.regional_subnets["centralindia-cicd"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/cicd-subnet]
+azurerm_network_security_group.regional_nsgs["australiaeast-api"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-australiaeast-api]
+azurerm_subnet_network_security_group_association.regional_assoc["centralindia-web"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/web-subnet]
+azurerm_network_security_group.regional_nsgs["australiaeast-private_endpoint"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-australiaeast-private_endpoint]
+azurerm_subnet_nat_gateway_association.nat_subnet_assoc["australiaeast-worker"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/worker-subnet]
+azurerm_network_security_group.regional_nsgs["australiaeast-app"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-australiaeast-app]
+azurerm_subnet.regional_subnets["australiaeast-management"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/management-subnet]
+azurerm_network_security_group.regional_nsgs["centralindia-db"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-centralindia-db]
+azurerm_subnet_route_table_association.private_assoc["australiaeast-management"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/management-subnet]
+azurerm_subnet_network_security_group_association.regional_assoc["centralindia-cicd"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/cicd-subnet]
+azurerm_nat_gateway_public_ip_association.nat_assoc["centralindia"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/natGateways/nat-centralindia|/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/publicIPAddresses/nat-pubip-centralindia]
+azurerm_subnet_network_security_group_association.regional_assoc["australiaeast-api"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/api-subnet]
+azurerm_network_security_group.regional_nsgs["centralindia-worker"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-centralindia-worker]
+azurerm_subnet_network_security_group_association.regional_assoc["australiaeast-management"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/management-subnet]
+azurerm_network_security_group.regional_nsgs["centralindia-monitoring"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-centralindia-monitoring]
+azurerm_route_table.public_rt["centralindia"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/routeTables/rt-public-centralindia]
+azurerm_subnet_nat_gateway_association.nat_subnet_assoc["australiaeast-api"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/api-subnet]
+azurerm_subnet.regional_subnets["australiaeast-worker"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/worker-subnet]
+azurerm_subnet_network_security_group_association.regional_assoc["australiaeast-monitoring"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/monitoring-subnet]
+azurerm_subnet_nat_gateway_association.nat_subnet_assoc["australiaeast-web"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/web-subnet]
+azurerm_public_ip.nat_gateway_pubip["centralindia"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/publicIPAddresses/nat-pubip-centralindia]
+azurerm_subnet_nat_gateway_association.nat_subnet_assoc["centralindia-web"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/web-subnet]
+azurerm_route_table.public_rt["australiaeast"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/routeTables/rt-public-australiaeast]
+azurerm_network_security_group.regional_nsgs["australiaeast-worker"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-australiaeast-worker]
+azurerm_subnet_network_security_group_association.regional_assoc["centralindia-management"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/management-subnet]
+azurerm_network_security_group.regional_nsgs["centralindia-gateway"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-centralindia-gateway]
+azurerm_nat_gateway.regional_nat["centralindia"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/natGateways/nat-centralindia]
+azurerm_subnet_route_table_association.private_assoc["australiaeast-private_endpoint"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/private_endpoint-subnet]
+azurerm_virtual_network_peering.aus_to_central: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/virtualNetworkPeerings/australiaeast-to-centralindia]
+azurerm_subnet.regional_subnets["centralindia-db"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/db-subnet]
+azurerm_subnet_network_security_group_association.regional_assoc["centralindia-db"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/db-subnet]
+azurerm_subnet_nat_gateway_association.nat_subnet_assoc["centralindia-app"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/app-subnet]
+azurerm_subnet_route_table_association.private_assoc["centralindia-management"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/management-subnet]
+azurerm_network_security_group.regional_nsgs["centralindia-bastion"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-centralindia-bastion]
+azurerm_subnet.regional_subnets["centralindia-api"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/api-subnet]
+azurerm_network_security_group.regional_nsgs["australiaeast-cicd"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-australiaeast-cicd]
+azurerm_subnet.regional_subnets["australiaeast-cicd"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/cicd-subnet]
+azurerm_nat_gateway.regional_nat["australiaeast"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/natGateways/nat-australiaeast]
+azurerm_subnet_route_table_association.private_assoc["australiaeast-db"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/db-subnet]
+azurerm_subnet.regional_subnets["australiaeast-api"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/api-subnet]
+azurerm_subnet_nat_gateway_association.nat_subnet_assoc["centralindia-cicd"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/cicd-subnet]
+azurerm_network_security_group.regional_nsgs["australiaeast-bastion"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-australiaeast-bastion]
+azurerm_subnet.regional_subnets["australiaeast-monitoring"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/monitoring-subnet]
+azurerm_subnet_network_security_group_association.regional_assoc["australiaeast-cicd"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/cicd-subnet]
+azurerm_network_security_group.regional_nsgs["australiaeast-db"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-australiaeast-db]
+azurerm_policy_definition.require_managed_by: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/providers/Microsoft.Authorization/policyDefinitions/require-managed-by-tag]
+azurerm_subnet_network_security_group_association.regional_assoc["australiaeast-web"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/web-subnet]
+azurerm_public_ip.nat_gateway_pubip["australiaeast"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/publicIPAddresses/nat-pubip-australiaeast]
+azurerm_subnet_route_table_association.public_assoc["australiaeast-cicd"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/cicd-subnet]
+azurerm_subnet.regional_subnets["centralindia-app"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/app-subnet]
+azurerm_subnet.regional_subnets["centralindia-firewall"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/AzureFirewallSubnet]
+azurerm_subnet_network_security_group_association.regional_assoc["australiaeast-worker"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/worker-subnet]
+azurerm_route_table.private_rt["australiaeast"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/routeTables/rt-private-australiaeast]
+azurerm_subnet_route_table_association.public_assoc["australiaeast-app"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/app-subnet]
+azurerm_network_security_group.regional_nsgs["australiaeast-monitoring"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-australiaeast-monitoring]
+azurerm_network_security_group.regional_nsgs["australiaeast-gateway"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-australiaeast-gateway]
+azurerm_network_security_group.regional_nsgs["centralindia-app"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-centralindia-app]
+azurerm_subnet.regional_subnets["centralindia-worker"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/worker-subnet]
+azurerm_subnet.regional_subnets["centralindia-gateway"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/GatewaySubnet]
+azurerm_subnet.regional_subnets["australiaeast-bastion"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/AzureBastionSubnet]
+azurerm_subnet_network_security_group_association.regional_assoc["australiaeast-private_endpoint"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/private_endpoint-subnet]
+azurerm_subnet_route_table_association.public_assoc["australiaeast-api"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/api-subnet]
+azurerm_subnet_route_table_association.public_assoc["centralindia-worker"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/worker-subnet]
+azurerm_subnet.regional_subnets["centralindia-web"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/web-subnet]
+azurerm_network_security_group.regional_nsgs["australiaeast-firewall"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-australiaeast-firewall]
+azurerm_network_security_group.regional_nsgs["centralindia-private_endpoint"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-centralindia-private_endpoint]
+azurerm_network_security_group.regional_nsgs["australiaeast-web"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-australiaeast-web]
+azurerm_network_security_group.regional_nsgs["australiaeast-management"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-australiaeast-management]
+azurerm_subnet.regional_subnets["australiaeast-db"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/db-subnet]
+azurerm_subnet.regional_subnets["australiaeast-gateway"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/GatewaySubnet]
+azurerm_network_security_group.regional_nsgs["centralindia-firewall"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-centralindia-firewall]
+azurerm_policy_definition.require_environment: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/providers/Microsoft.Authorization/policyDefinitions/require-environment-tag]
+data.azurerm_client_config.current: Reading...
+data.azurerm_client_config.current: Read complete after 0s [id=Y2xpZW50Q29uZmlncy9jbGllbnRJZD0wNGIwNzc5NS04ZGRiLTQ2MWEtYmJlZS0wMmY5ZTFiZjdiNDY7b2JqZWN0SWQ9M2E2NGFlZDktODY4NS00ZjYwLWJhZDQtYzdhMGIzZTBlNGQyO3N1YnNjcmlwdGlvbklkPTJiMmYwMmY3LWRkZTItNDdkYi05NzRjLTQ3ZDIxODI3MjFhZTt0ZW5hbnRJZD1mMTc1YzU2ZC00MDEzLTQyZmEtYTBlOC00MTAzZDIyNzZhMGQ=]
+azurerm_network_security_group.regional_nsgs["centralindia-management"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-centralindia-management]
+azurerm_nat_gateway_public_ip_association.nat_assoc["australiaeast"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/natGateways/nat-australiaeast|/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/publicIPAddresses/nat-pubip-australiaeast]
+azurerm_subnet_route_table_association.public_assoc["australiaeast-web"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/web-subnet]
+azurerm_subnet.regional_subnets["centralindia-bastion"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/AzureBastionSubnet]
+azurerm_subnet.regional_subnets["centralindia-management"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/management-subnet]
+azurerm_subnet_nat_gateway_association.nat_subnet_assoc["centralindia-worker"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/worker-subnet]
+azurerm_subnet.regional_subnets["australiaeast-app"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/app-subnet]
+azurerm_subnet_route_table_association.public_assoc["centralindia-api"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/api-subnet]
+azurerm_network_security_group.regional_nsgs["centralindia-web"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-centralindia-web]
+azurerm_subnet_route_table_association.private_assoc["centralindia-private_endpoint"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/private_endpoint-subnet]
+azurerm_subnet.regional_subnets["centralindia-private_endpoint"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/private_endpoint-subnet]
+azurerm_network_security_group.regional_nsgs["centralindia-cicd"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-centralindia-cicd]
+azurerm_subnet_nat_gateway_association.nat_subnet_assoc["centralindia-api"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/api-subnet]
+azurerm_policy_definition.require_deployment_id: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/providers/Microsoft.Authorization/policyDefinitions/require-deployment-id-tag]
+azurerm_subnet_route_table_association.public_assoc["centralindia-web"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/web-subnet]
+azurerm_subnet_nat_gateway_association.nat_subnet_assoc["australiaeast-app"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/app-subnet]
+azurerm_subnet.regional_subnets["centralindia-monitoring"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/monitoring-subnet]
+azurerm_subnet_nat_gateway_association.nat_subnet_assoc["australiaeast-cicd"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/cicd-subnet]
+azurerm_subnet_network_security_group_association.regional_assoc["centralindia-monitoring"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/monitoring-subnet]
+azurerm_subnet_route_table_association.public_assoc["australiaeast-worker"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/worker-subnet]
+azurerm_subnet_network_security_group_association.regional_assoc["australiaeast-app"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/app-subnet]
+azurerm_subnet_route_table_association.public_assoc["centralindia-app"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/app-subnet]
+azurerm_subnet_network_security_group_association.regional_assoc["australiaeast-db"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/db-subnet]
+azurerm_subnet.regional_subnets["australiaeast-firewall"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/AzureFirewallSubnet]
+azurerm_subnet_network_security_group_association.regional_assoc["centralindia-app"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/app-subnet]
+azurerm_subnet.regional_subnets["australiaeast-private_endpoint"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/private_endpoint-subnet]
+data.azuread_service_principal.prodmyapp: Reading...
+data.azuread_service_principal.prodmyapp: Read complete after 1s [id=3a64aed9-8685-4f60-bad4-c7a0b3e0e4d2]
+null_resource.validate_vm_size: Refreshing state... [id=2258612548479758890]
+azurerm_resource_group.prodmyapp: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup]
+azurerm_key_vault.prodmyapp: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.KeyVault/vaults/prodmyappkv]
+azurerm_virtual_network.regional_vnets["centralindia"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia]
+azurerm_resource_group_policy_assignment.rg_managed_by: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Authorization/policyAssignments/rg-require-managed-by]
+azurerm_virtual_network.regional_vnets["australiaeast"]: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast]
+azurerm_user_assigned_identity.prodmyapp_sa_identity: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.ManagedIdentity/userAssignedIdentities/my-storage-identity]
+azurerm_resource_group_policy_assignment.rg_environment: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Authorization/policyAssignments/rg-require-environment]
+azurerm_resource_group_policy_assignment.rg_deployment_id: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Authorization/policyAssignments/rg-require-deployment-id]
+azurerm_key_vault_secret.sp_client_id: Refreshing state... [id=https://prodmyappkv.vault.azure.net/secrets/sp-client-id/d7fb0faf32524ce48be82c8a1abaa501]
+azurerm_key_vault_secret.sp_client_secret: Refreshing state... [id=https://prodmyappkv.vault.azure.net/secrets/sp-client-secret/fdb2e08062544e90a6c3ecfb6a25897f]
+azurerm_key_vault_secret.sp_tenant_id: Refreshing state... [id=https://prodmyappkv.vault.azure.net/secrets/sp-tenant-id/abe0edc6d4dd450e86dc8ac101fb4212]
+azurerm_role_assignment.tf_kv_admin: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.KeyVault/vaults/prodmyappkv/providers/Microsoft.Authorization/roleAssignments/d9e169d9-c689-f1ee-c3a7-3bb1f5b6f37b]
+azurerm_key_vault_secret.sp_subscription_id: Refreshing state... [id=https://prodmyappkv.vault.azure.net/secrets/sp-subscription-id/380b5a9f9c6e44d4b10468e2b1df6ca1]
+azurerm_key_vault_secret.github_token: Refreshing state... [id=https://prodmyappkv.vault.azure.net/secrets/githubtoken/587c6f85ea8b4c5d88740a0fe18cefca]
+azurerm_storage_account.prodmyapp: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Storage/storageAccounts/prodmyappsacmk01]
+azurerm_role_assignment.storage_kv_crypto: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.KeyVault/vaults/prodmyappkv/providers/Microsoft.Authorization/roleAssignments/d1648830-65b8-0064-48c5-441d75dea67a]
+time_sleep.wait_for_kv_rbac: Refreshing state... [id=2026-04-20T10:45:24Z]
+azurerm_storage_container.prodmyapp: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Storage/storageAccounts/prodmyappsacmk01/blobServices/default/containers/mytfstate]
+azurerm_key_vault_key.prodmyapp_key: Refreshing state... [id=https://prodmyappkv.vault.azure.net/keys/my-storage-cmk/51e0da2d9d5a4b53bfedce7faa0471cc]
+azurerm_role_assignment.terraform_backend_storage_access: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Storage/storageAccounts/prodmyappsacmk01/blobServices/default/containers/mytfstate/providers/Microsoft.Authorization/roleAssignments/52e4c051-0a07-1a95-7783-c649efbc7865]
+azurerm_disk_encryption_set.prod_des: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Compute/diskEncryptionSets/prod-des]
+azurerm_storage_account_customer_managed_key.prodmyapp_sa_cmk: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Storage/storageAccounts/prodmyappsacmk01]
+azurerm_role_assignment.des_kv_crypto: Refreshing state... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.KeyVault/vaults/prodmyappkv/providers/Microsoft.Authorization/roleAssignments/6cad63bb-2172-dd68-e0d5-eb1c0c662ed3]
+time_sleep.wait_for_des_rbac: Refreshing state... [id=2026-04-26T15:25:29Z]
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  - destroy
+
+Terraform will perform the following actions:
+
+  # azurerm_nat_gateway.regional_nat["australiaeast"] will be destroyed
+  # (because azurerm_nat_gateway.regional_nat is not in configuration)
+  - resource "azurerm_nat_gateway" "regional_nat" {
+      - id                      = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/natGateways/nat-australiaeast" -> null
+      - idle_timeout_in_minutes = 4 -> null
+      - location                = "australiaeast" -> null
+      - name                    = "nat-australiaeast" -> null
+      - resource_group_name     = "myTFResourceGroup" -> null
+      - resource_guid           = "8c9b6a2c-0cb2-47d6-b6ff-9b791eb380f7" -> null
+      - sku_name                = "Standard" -> null
+      - tags                    = {
+          - "Name"            = "nat-gateway-australiaeast$"
+          - "creation_run_id" = "466"
+          - "creation_time"   = "2026-05-21T14:27:05Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+      - zones                   = [] -> null
+    }
+
+  # azurerm_nat_gateway.regional_nat["centralindia"] will be destroyed
+  # (because azurerm_nat_gateway.regional_nat is not in configuration)
+  - resource "azurerm_nat_gateway" "regional_nat" {
+      - id                      = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/natGateways/nat-centralindia" -> null
+      - idle_timeout_in_minutes = 4 -> null
+      - location                = "centralindia" -> null
+      - name                    = "nat-centralindia" -> null
+      - resource_group_name     = "myTFResourceGroup" -> null
+      - resource_guid           = "954f842a-abac-441a-8d64-ac1dd969391f" -> null
+      - sku_name                = "Standard" -> null
+      - tags                    = {
+          - "Name"            = "nat-gateway-centralindia$"
+          - "creation_run_id" = "466"
+          - "creation_time"   = "2026-05-21T14:27:05Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+      - zones                   = [] -> null
+    }
+
+  # azurerm_nat_gateway_public_ip_association.nat_assoc["australiaeast"] will be destroyed
+  # (because azurerm_nat_gateway_public_ip_association.nat_assoc is not in configuration)
+  - resource "azurerm_nat_gateway_public_ip_association" "nat_assoc" {
+      - id                   = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/natGateways/nat-australiaeast|/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/publicIPAddresses/nat-pubip-australiaeast" -> null
+      - nat_gateway_id       = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/natGateways/nat-australiaeast" -> null
+      - public_ip_address_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/publicIPAddresses/nat-pubip-australiaeast" -> null
+    }
+
+  # azurerm_nat_gateway_public_ip_association.nat_assoc["centralindia"] will be destroyed
+  # (because azurerm_nat_gateway_public_ip_association.nat_assoc is not in configuration)
+  - resource "azurerm_nat_gateway_public_ip_association" "nat_assoc" {
+      - id                   = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/natGateways/nat-centralindia|/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/publicIPAddresses/nat-pubip-centralindia" -> null
+      - nat_gateway_id       = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/natGateways/nat-centralindia" -> null
+      - public_ip_address_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/publicIPAddresses/nat-pubip-centralindia" -> null
+    }
+
+  # azurerm_network_security_group.regional_nsgs["australiaeast-api"] will be destroyed
+  # (because azurerm_network_security_group.regional_nsgs is not in configuration)
+  - resource "azurerm_network_security_group" "regional_nsgs" {
+      - id                  = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-australiaeast-api" -> null
+      - location            = "australiaeast" -> null
+      - name                = "nsg-australiaeast-api" -> null
+      - resource_group_name = "myTFResourceGroup" -> null
+      - security_rule       = [] -> null
+      - tags                = {
+          - "Name"            = "nsg-australiaeast-api"
+          - "creation_run_id" = "465"
+          - "creation_time"   = "2026-05-20T12:16:24Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+    }
+
+  # azurerm_network_security_group.regional_nsgs["australiaeast-app"] will be destroyed
+  # (because azurerm_network_security_group.regional_nsgs is not in configuration)
+  - resource "azurerm_network_security_group" "regional_nsgs" {
+      - id                  = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-australiaeast-app" -> null
+      - location            = "australiaeast" -> null
+      - name                = "nsg-australiaeast-app" -> null
+      - resource_group_name = "myTFResourceGroup" -> null
+      - security_rule       = [] -> null
+      - tags                = {
+          - "Name"            = "nsg-australiaeast-app"
+          - "creation_run_id" = "465"
+          - "creation_time"   = "2026-05-20T12:16:24Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+    }
+
+  # azurerm_network_security_group.regional_nsgs["australiaeast-bastion"] will be destroyed
+  # (because azurerm_network_security_group.regional_nsgs is not in configuration)
+  - resource "azurerm_network_security_group" "regional_nsgs" {
+      - id                  = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-australiaeast-bastion" -> null
+      - location            = "australiaeast" -> null
+      - name                = "nsg-australiaeast-bastion" -> null
+      - resource_group_name = "myTFResourceGroup" -> null
+      - security_rule       = [] -> null
+      - tags                = {
+          - "Name"            = "nsg-australiaeast-bastion"
+          - "creation_run_id" = "465"
+          - "creation_time"   = "2026-05-20T12:16:24Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+    }
+
+  # azurerm_network_security_group.regional_nsgs["australiaeast-cicd"] will be destroyed
+  # (because azurerm_network_security_group.regional_nsgs is not in configuration)
+  - resource "azurerm_network_security_group" "regional_nsgs" {
+      - id                  = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-australiaeast-cicd" -> null
+      - location            = "australiaeast" -> null
+      - name                = "nsg-australiaeast-cicd" -> null
+      - resource_group_name = "myTFResourceGroup" -> null
+      - security_rule       = [] -> null
+      - tags                = {
+          - "Name"            = "nsg-australiaeast-cicd"
+          - "creation_run_id" = "465"
+          - "creation_time"   = "2026-05-20T12:16:24Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+    }
+
+  # azurerm_network_security_group.regional_nsgs["australiaeast-db"] will be destroyed
+  # (because azurerm_network_security_group.regional_nsgs is not in configuration)
+  - resource "azurerm_network_security_group" "regional_nsgs" {
+      - id                  = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-australiaeast-db" -> null
+      - location            = "australiaeast" -> null
+      - name                = "nsg-australiaeast-db" -> null
+      - resource_group_name = "myTFResourceGroup" -> null
+      - security_rule       = [] -> null
+      - tags                = {
+          - "Name"            = "nsg-australiaeast-db"
+          - "creation_run_id" = "465"
+          - "creation_time"   = "2026-05-20T12:16:24Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+    }
+
+  # azurerm_network_security_group.regional_nsgs["australiaeast-firewall"] will be destroyed
+  # (because azurerm_network_security_group.regional_nsgs is not in configuration)
+  - resource "azurerm_network_security_group" "regional_nsgs" {
+      - id                  = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-australiaeast-firewall" -> null
+      - location            = "australiaeast" -> null
+      - name                = "nsg-australiaeast-firewall" -> null
+      - resource_group_name = "myTFResourceGroup" -> null
+      - security_rule       = [] -> null
+      - tags                = {
+          - "Name"            = "nsg-australiaeast-firewall"
+          - "creation_run_id" = "465"
+          - "creation_time"   = "2026-05-20T12:16:24Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+    }
+
+  # azurerm_network_security_group.regional_nsgs["australiaeast-gateway"] will be destroyed
+  # (because azurerm_network_security_group.regional_nsgs is not in configuration)
+  - resource "azurerm_network_security_group" "regional_nsgs" {
+      - id                  = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-australiaeast-gateway" -> null
+      - location            = "australiaeast" -> null
+      - name                = "nsg-australiaeast-gateway" -> null
+      - resource_group_name = "myTFResourceGroup" -> null
+      - security_rule       = [] -> null
+      - tags                = {
+          - "Name"            = "nsg-australiaeast-gateway"
+          - "creation_run_id" = "465"
+          - "creation_time"   = "2026-05-20T12:16:24Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+    }
+
+  # azurerm_network_security_group.regional_nsgs["australiaeast-management"] will be destroyed
+  # (because azurerm_network_security_group.regional_nsgs is not in configuration)
+  - resource "azurerm_network_security_group" "regional_nsgs" {
+      - id                  = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-australiaeast-management" -> null
+      - location            = "australiaeast" -> null
+      - name                = "nsg-australiaeast-management" -> null
+      - resource_group_name = "myTFResourceGroup" -> null
+      - security_rule       = [] -> null
+      - tags                = {
+          - "Name"            = "nsg-australiaeast-management"
+          - "creation_run_id" = "465"
+          - "creation_time"   = "2026-05-20T12:16:24Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+    }
+
+  # azurerm_network_security_group.regional_nsgs["australiaeast-monitoring"] will be destroyed
+  # (because azurerm_network_security_group.regional_nsgs is not in configuration)
+  - resource "azurerm_network_security_group" "regional_nsgs" {
+      - id                  = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-australiaeast-monitoring" -> null
+      - location            = "australiaeast" -> null
+      - name                = "nsg-australiaeast-monitoring" -> null
+      - resource_group_name = "myTFResourceGroup" -> null
+      - security_rule       = [] -> null
+      - tags                = {
+          - "Name"            = "nsg-australiaeast-monitoring"
+          - "creation_run_id" = "465"
+          - "creation_time"   = "2026-05-20T12:16:24Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+    }
+
+  # azurerm_network_security_group.regional_nsgs["australiaeast-private_endpoint"] will be destroyed
+  # (because azurerm_network_security_group.regional_nsgs is not in configuration)
+  - resource "azurerm_network_security_group" "regional_nsgs" {
+      - id                  = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-australiaeast-private_endpoint" -> null
+      - location            = "australiaeast" -> null
+      - name                = "nsg-australiaeast-private_endpoint" -> null
+      - resource_group_name = "myTFResourceGroup" -> null
+      - security_rule       = [] -> null
+      - tags                = {
+          - "Name"            = "nsg-australiaeast-private_endpoint"
+          - "creation_run_id" = "465"
+          - "creation_time"   = "2026-05-20T12:16:24Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+    }
+
+  # azurerm_network_security_group.regional_nsgs["australiaeast-web"] will be destroyed
+  # (because azurerm_network_security_group.regional_nsgs is not in configuration)
+  - resource "azurerm_network_security_group" "regional_nsgs" {
+      - id                  = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-australiaeast-web" -> null
+      - location            = "australiaeast" -> null
+      - name                = "nsg-australiaeast-web" -> null
+      - resource_group_name = "myTFResourceGroup" -> null
+      - security_rule       = [] -> null
+      - tags                = {
+          - "Name"            = "nsg-australiaeast-web"
+          - "creation_run_id" = "465"
+          - "creation_time"   = "2026-05-20T12:16:24Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+    }
+
+  # azurerm_network_security_group.regional_nsgs["australiaeast-worker"] will be destroyed
+  # (because azurerm_network_security_group.regional_nsgs is not in configuration)
+  - resource "azurerm_network_security_group" "regional_nsgs" {
+      - id                  = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-australiaeast-worker" -> null
+      - location            = "australiaeast" -> null
+      - name                = "nsg-australiaeast-worker" -> null
+      - resource_group_name = "myTFResourceGroup" -> null
+      - security_rule       = [] -> null
+      - tags                = {
+          - "Name"            = "nsg-australiaeast-worker"
+          - "creation_run_id" = "465"
+          - "creation_time"   = "2026-05-20T12:16:24Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+    }
+
+  # azurerm_network_security_group.regional_nsgs["centralindia-api"] will be destroyed
+  # (because azurerm_network_security_group.regional_nsgs is not in configuration)
+  - resource "azurerm_network_security_group" "regional_nsgs" {
+      - id                  = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-centralindia-api" -> null
+      - location            = "centralindia" -> null
+      - name                = "nsg-centralindia-api" -> null
+      - resource_group_name = "myTFResourceGroup" -> null
+      - security_rule       = [] -> null
+      - tags                = {
+          - "Name"            = "nsg-centralindia-api"
+          - "creation_run_id" = "465"
+          - "creation_time"   = "2026-05-20T12:16:24Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+    }
+
+  # azurerm_network_security_group.regional_nsgs["centralindia-app"] will be destroyed
+  # (because azurerm_network_security_group.regional_nsgs is not in configuration)
+  - resource "azurerm_network_security_group" "regional_nsgs" {
+      - id                  = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-centralindia-app" -> null
+      - location            = "centralindia" -> null
+      - name                = "nsg-centralindia-app" -> null
+      - resource_group_name = "myTFResourceGroup" -> null
+      - security_rule       = [] -> null
+      - tags                = {
+          - "Name"            = "nsg-centralindia-app"
+          - "creation_run_id" = "465"
+          - "creation_time"   = "2026-05-20T12:16:24Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+    }
+
+  # azurerm_network_security_group.regional_nsgs["centralindia-bastion"] will be destroyed
+  # (because azurerm_network_security_group.regional_nsgs is not in configuration)
+  - resource "azurerm_network_security_group" "regional_nsgs" {
+      - id                  = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-centralindia-bastion" -> null
+      - location            = "centralindia" -> null
+      - name                = "nsg-centralindia-bastion" -> null
+      - resource_group_name = "myTFResourceGroup" -> null
+      - security_rule       = [] -> null
+      - tags                = {
+          - "Name"            = "nsg-centralindia-bastion"
+          - "creation_run_id" = "465"
+          - "creation_time"   = "2026-05-20T12:16:24Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+    }
+
+  # azurerm_network_security_group.regional_nsgs["centralindia-cicd"] will be destroyed
+  # (because azurerm_network_security_group.regional_nsgs is not in configuration)
+  - resource "azurerm_network_security_group" "regional_nsgs" {
+      - id                  = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-centralindia-cicd" -> null
+      - location            = "centralindia" -> null
+      - name                = "nsg-centralindia-cicd" -> null
+      - resource_group_name = "myTFResourceGroup" -> null
+      - security_rule       = [] -> null
+      - tags                = {
+          - "Name"            = "nsg-centralindia-cicd"
+          - "creation_run_id" = "465"
+          - "creation_time"   = "2026-05-20T12:16:24Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+    }
+
+  # azurerm_network_security_group.regional_nsgs["centralindia-db"] will be destroyed
+  # (because azurerm_network_security_group.regional_nsgs is not in configuration)
+  - resource "azurerm_network_security_group" "regional_nsgs" {
+      - id                  = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-centralindia-db" -> null
+      - location            = "centralindia" -> null
+      - name                = "nsg-centralindia-db" -> null
+      - resource_group_name = "myTFResourceGroup" -> null
+      - security_rule       = [] -> null
+      - tags                = {
+          - "Name"            = "nsg-centralindia-db"
+          - "creation_run_id" = "465"
+          - "creation_time"   = "2026-05-20T12:16:24Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+    }
+
+  # azurerm_network_security_group.regional_nsgs["centralindia-firewall"] will be destroyed
+  # (because azurerm_network_security_group.regional_nsgs is not in configuration)
+  - resource "azurerm_network_security_group" "regional_nsgs" {
+      - id                  = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-centralindia-firewall" -> null
+      - location            = "centralindia" -> null
+      - name                = "nsg-centralindia-firewall" -> null
+      - resource_group_name = "myTFResourceGroup" -> null
+      - security_rule       = [] -> null
+      - tags                = {
+          - "Name"            = "nsg-centralindia-firewall"
+          - "creation_run_id" = "465"
+          - "creation_time"   = "2026-05-20T12:16:24Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+    }
+
+  # azurerm_network_security_group.regional_nsgs["centralindia-gateway"] will be destroyed
+  # (because azurerm_network_security_group.regional_nsgs is not in configuration)
+  - resource "azurerm_network_security_group" "regional_nsgs" {
+      - id                  = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-centralindia-gateway" -> null
+      - location            = "centralindia" -> null
+      - name                = "nsg-centralindia-gateway" -> null
+      - resource_group_name = "myTFResourceGroup" -> null
+      - security_rule       = [] -> null
+      - tags                = {
+          - "Name"            = "nsg-centralindia-gateway"
+          - "creation_run_id" = "465"
+          - "creation_time"   = "2026-05-20T12:16:24Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+    }
+
+  # azurerm_network_security_group.regional_nsgs["centralindia-management"] will be destroyed
+  # (because azurerm_network_security_group.regional_nsgs is not in configuration)
+  - resource "azurerm_network_security_group" "regional_nsgs" {
+      - id                  = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-centralindia-management" -> null
+      - location            = "centralindia" -> null
+      - name                = "nsg-centralindia-management" -> null
+      - resource_group_name = "myTFResourceGroup" -> null
+      - security_rule       = [] -> null
+      - tags                = {
+          - "Name"            = "nsg-centralindia-management"
+          - "creation_run_id" = "465"
+          - "creation_time"   = "2026-05-20T12:16:24Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+    }
+
+  # azurerm_network_security_group.regional_nsgs["centralindia-monitoring"] will be destroyed
+  # (because azurerm_network_security_group.regional_nsgs is not in configuration)
+  - resource "azurerm_network_security_group" "regional_nsgs" {
+      - id                  = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-centralindia-monitoring" -> null
+      - location            = "centralindia" -> null
+      - name                = "nsg-centralindia-monitoring" -> null
+      - resource_group_name = "myTFResourceGroup" -> null
+      - security_rule       = [] -> null
+      - tags                = {
+          - "Name"            = "nsg-centralindia-monitoring"
+          - "creation_run_id" = "465"
+          - "creation_time"   = "2026-05-20T12:16:24Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+    }
+
+  # azurerm_network_security_group.regional_nsgs["centralindia-private_endpoint"] will be destroyed
+  # (because azurerm_network_security_group.regional_nsgs is not in configuration)
+  - resource "azurerm_network_security_group" "regional_nsgs" {
+      - id                  = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-centralindia-private_endpoint" -> null
+      - location            = "centralindia" -> null
+      - name                = "nsg-centralindia-private_endpoint" -> null
+      - resource_group_name = "myTFResourceGroup" -> null
+      - security_rule       = [] -> null
+      - tags                = {
+          - "Name"            = "nsg-centralindia-private_endpoint"
+          - "creation_run_id" = "465"
+          - "creation_time"   = "2026-05-20T12:16:24Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+    }
+
+  # azurerm_network_security_group.regional_nsgs["centralindia-web"] will be destroyed
+  # (because azurerm_network_security_group.regional_nsgs is not in configuration)
+  - resource "azurerm_network_security_group" "regional_nsgs" {
+      - id                  = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-centralindia-web" -> null
+      - location            = "centralindia" -> null
+      - name                = "nsg-centralindia-web" -> null
+      - resource_group_name = "myTFResourceGroup" -> null
+      - security_rule       = [] -> null
+      - tags                = {
+          - "Name"            = "nsg-centralindia-web"
+          - "creation_run_id" = "465"
+          - "creation_time"   = "2026-05-20T12:16:24Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+    }
+
+  # azurerm_network_security_group.regional_nsgs["centralindia-worker"] will be destroyed
+  # (because azurerm_network_security_group.regional_nsgs is not in configuration)
+  - resource "azurerm_network_security_group" "regional_nsgs" {
+      - id                  = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-centralindia-worker" -> null
+      - location            = "centralindia" -> null
+      - name                = "nsg-centralindia-worker" -> null
+      - resource_group_name = "myTFResourceGroup" -> null
+      - security_rule       = [] -> null
+      - tags                = {
+          - "Name"            = "nsg-centralindia-worker"
+          - "creation_run_id" = "465"
+          - "creation_time"   = "2026-05-20T12:16:24Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+    }
+
+  # azurerm_public_ip.nat_gateway_pubip["australiaeast"] will be destroyed
+  # (because azurerm_public_ip.nat_gateway_pubip is not in configuration)
+  - resource "azurerm_public_ip" "nat_gateway_pubip" {
+      - allocation_method       = "Static" -> null
+      - ddos_protection_mode    = "VirtualNetworkInherited" -> null
+      - id                      = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/publicIPAddresses/nat-pubip-australiaeast" -> null
+      - idle_timeout_in_minutes = 4 -> null
+      - ip_address              = "20.70.192.110" -> null
+      - ip_tags                 = {} -> null
+      - ip_version              = "IPv4" -> null
+      - location                = "australiaeast" -> null
+      - name                    = "nat-pubip-australiaeast" -> null
+      - resource_group_name     = "myTFResourceGroup" -> null
+      - sku                     = "Standard" -> null
+      - sku_tier                = "Regional" -> null
+      - tags                    = {
+          - "Name"            = "nat-gateway-pubip-australiaeast"
+          - "creation_run_id" = "466"
+          - "creation_time"   = "2026-05-21T14:27:05Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+      - zones                   = [] -> null
+        # (5 unchanged attributes hidden)
+    }
+
+  # azurerm_public_ip.nat_gateway_pubip["centralindia"] will be destroyed
+  # (because azurerm_public_ip.nat_gateway_pubip is not in configuration)
+  - resource "azurerm_public_ip" "nat_gateway_pubip" {
+      - allocation_method       = "Static" -> null
+      - ddos_protection_mode    = "VirtualNetworkInherited" -> null
+      - id                      = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/publicIPAddresses/nat-pubip-centralindia" -> null
+      - idle_timeout_in_minutes = 4 -> null
+      - ip_address              = "20.198.121.209" -> null
+      - ip_tags                 = {} -> null
+      - ip_version              = "IPv4" -> null
+      - location                = "centralindia" -> null
+      - name                    = "nat-pubip-centralindia" -> null
+      - resource_group_name     = "myTFResourceGroup" -> null
+      - sku                     = "Standard" -> null
+      - sku_tier                = "Regional" -> null
+      - tags                    = {
+          - "Name"            = "nat-gateway-pubip-centralindia"
+          - "creation_run_id" = "466"
+          - "creation_time"   = "2026-05-21T14:27:05Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+      - zones                   = [] -> null
+        # (5 unchanged attributes hidden)
+    }
+
+  # azurerm_route_table.private_rt["australiaeast"] will be destroyed
+  # (because azurerm_route_table.private_rt is not in configuration)
+  - resource "azurerm_route_table" "private_rt" {
+      - bgp_route_propagation_enabled = true -> null
+      - id                            = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/routeTables/rt-private-australiaeast" -> null
+      - location                      = "australiaeast" -> null
+      - name                          = "rt-private-australiaeast" -> null
+      - resource_group_name           = "myTFResourceGroup" -> null
+      - route                         = [] -> null
+      - subnets                       = [
+          - "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/db-subnet",
+          - "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/management-subnet",
+          - "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/private_endpoint-subnet",
+        ] -> null
+      - tags                          = {
+          - "Name"            = "route-table-pvt-australiaeast"
+          - "creation_run_id" = "466"
+          - "creation_time"   = "2026-05-21T14:27:05Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+    }
+
+  # azurerm_route_table.private_rt["centralindia"] will be destroyed
+  # (because azurerm_route_table.private_rt is not in configuration)
+  - resource "azurerm_route_table" "private_rt" {
+      - bgp_route_propagation_enabled = true -> null
+      - id                            = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/routeTables/rt-private-centralindia" -> null
+      - location                      = "centralindia" -> null
+      - name                          = "rt-private-centralindia" -> null
+      - resource_group_name           = "myTFResourceGroup" -> null
+      - route                         = [] -> null
+      - subnets                       = [
+          - "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/db-subnet",
+          - "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/management-subnet",
+          - "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/private_endpoint-subnet",
+        ] -> null
+      - tags                          = {
+          - "Name"            = "route-table-pvt-centralindia"
+          - "creation_run_id" = "466"
+          - "creation_time"   = "2026-05-21T14:27:05Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+    }
+
+  # azurerm_route_table.public_rt["australiaeast"] will be destroyed
+  # (because azurerm_route_table.public_rt is not in configuration)
+  - resource "azurerm_route_table" "public_rt" {
+      - bgp_route_propagation_enabled = true -> null
+      - id                            = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/routeTables/rt-public-australiaeast" -> null
+      - location                      = "australiaeast" -> null
+      - name                          = "rt-public-australiaeast" -> null
+      - resource_group_name           = "myTFResourceGroup" -> null
+      - route                         = [
+          - {
+              - address_prefix         = "0.0.0.0/0"
+              - name                   = "internet-route"
+              - next_hop_type          = "Internet"
+                # (1 unchanged attribute hidden)
+            },
+        ] -> null
+      - subnets                       = [
+          - "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/api-subnet",
+          - "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/app-subnet",
+          - "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/cicd-subnet",
+          - "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/web-subnet",
+          - "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/worker-subnet",
+        ] -> null
+      - tags                          = {
+          - "Name"            = "route-table-pub-australiaeast"
+          - "creation_run_id" = "466"
+          - "creation_time"   = "2026-05-21T14:27:05Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+    }
+
+  # azurerm_route_table.public_rt["centralindia"] will be destroyed
+  # (because azurerm_route_table.public_rt is not in configuration)
+  - resource "azurerm_route_table" "public_rt" {
+      - bgp_route_propagation_enabled = true -> null
+      - id                            = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/routeTables/rt-public-centralindia" -> null
+      - location                      = "centralindia" -> null
+      - name                          = "rt-public-centralindia" -> null
+      - resource_group_name           = "myTFResourceGroup" -> null
+      - route                         = [
+          - {
+              - address_prefix         = "0.0.0.0/0"
+              - name                   = "internet-route"
+              - next_hop_type          = "Internet"
+                # (1 unchanged attribute hidden)
+            },
+        ] -> null
+      - subnets                       = [
+          - "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/api-subnet",
+          - "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/app-subnet",
+          - "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/cicd-subnet",
+          - "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/web-subnet",
+          - "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/worker-subnet",
+        ] -> null
+      - tags                          = {
+          - "Name"            = "route-table-pub-centralindia"
+          - "creation_run_id" = "466"
+          - "creation_time"   = "2026-05-21T14:27:05Z"
+          - "deployment_id"   = "prodmyapp"
+          - "environment"     = "prod"
+          - "managed_by"      = "terraform"
+        } -> null
+    }
+
+  # azurerm_subnet.regional_subnets["australiaeast-api"] will be destroyed
+  # (because azurerm_subnet.regional_subnets is not in configuration)
+  - resource "azurerm_subnet" "regional_subnets" {
+      - address_prefixes                              = [
+          - "10.10.30.0/24",
+        ] -> null
+      - default_outbound_access_enabled               = true -> null
+      - id                                            = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/api-subnet" -> null
+      - name                                          = "api-subnet" -> null
+      - private_endpoint_network_policies             = "Disabled" -> null
+      - private_link_service_network_policies_enabled = true -> null
+      - resource_group_name                           = "myTFResourceGroup" -> null
+      - service_endpoint_policy_ids                   = [] -> null
+      - service_endpoints                             = [] -> null
+      - virtual_network_name                          = "vnet-australiaeast" -> null
+        # (1 unchanged attribute hidden)
+    }
+
+  # azurerm_subnet.regional_subnets["australiaeast-app"] will be destroyed
+  # (because azurerm_subnet.regional_subnets is not in configuration)
+  - resource "azurerm_subnet" "regional_subnets" {
+      - address_prefixes                              = [
+          - "10.10.20.0/24",
+        ] -> null
+      - default_outbound_access_enabled               = true -> null
+      - id                                            = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/app-subnet" -> null
+      - name                                          = "app-subnet" -> null
+      - private_endpoint_network_policies             = "Disabled" -> null
+      - private_link_service_network_policies_enabled = true -> null
+      - resource_group_name                           = "myTFResourceGroup" -> null
+      - service_endpoint_policy_ids                   = [] -> null
+      - service_endpoints                             = [] -> null
+      - virtual_network_name                          = "vnet-australiaeast" -> null
+        # (1 unchanged attribute hidden)
+    }
+
+  # azurerm_subnet.regional_subnets["australiaeast-bastion"] will be destroyed
+  # (because azurerm_subnet.regional_subnets is not in configuration)
+  - resource "azurerm_subnet" "regional_subnets" {
+      - address_prefixes                              = [
+          - "10.10.1.0/24",
+        ] -> null
+      - default_outbound_access_enabled               = true -> null
+      - id                                            = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/AzureBastionSubnet" -> null
+      - name                                          = "AzureBastionSubnet" -> null
+      - private_endpoint_network_policies             = "Disabled" -> null
+      - private_link_service_network_policies_enabled = true -> null
+      - resource_group_name                           = "myTFResourceGroup" -> null
+      - service_endpoint_policy_ids                   = [] -> null
+      - service_endpoints                             = [] -> null
+      - virtual_network_name                          = "vnet-australiaeast" -> null
+        # (1 unchanged attribute hidden)
+    }
+
+  # azurerm_subnet.regional_subnets["australiaeast-cicd"] will be destroyed
+  # (because azurerm_subnet.regional_subnets is not in configuration)
+  - resource "azurerm_subnet" "regional_subnets" {
+      - address_prefixes                              = [
+          - "10.10.70.0/24",
+        ] -> null
+      - default_outbound_access_enabled               = true -> null
+      - id                                            = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/cicd-subnet" -> null
+      - name                                          = "cicd-subnet" -> null
+      - private_endpoint_network_policies             = "Disabled" -> null
+      - private_link_service_network_policies_enabled = true -> null
+      - resource_group_name                           = "myTFResourceGroup" -> null
+      - service_endpoint_policy_ids                   = [] -> null
+      - service_endpoints                             = [] -> null
+      - virtual_network_name                          = "vnet-australiaeast" -> null
+        # (1 unchanged attribute hidden)
+    }
+
+  # azurerm_subnet.regional_subnets["australiaeast-db"] will be destroyed
+  # (because azurerm_subnet.regional_subnets is not in configuration)
+  - resource "azurerm_subnet" "regional_subnets" {
+      - address_prefixes                              = [
+          - "10.10.50.0/24",
+        ] -> null
+      - default_outbound_access_enabled               = true -> null
+      - id                                            = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/db-subnet" -> null
+      - name                                          = "db-subnet" -> null
+      - private_endpoint_network_policies             = "Disabled" -> null
+      - private_link_service_network_policies_enabled = true -> null
+      - resource_group_name                           = "myTFResourceGroup" -> null
+      - service_endpoint_policy_ids                   = [] -> null
+      - service_endpoints                             = [] -> null
+      - virtual_network_name                          = "vnet-australiaeast" -> null
+        # (1 unchanged attribute hidden)
+    }
+
+  # azurerm_subnet.regional_subnets["australiaeast-firewall"] will be destroyed
+  # (because azurerm_subnet.regional_subnets is not in configuration)
+  - resource "azurerm_subnet" "regional_subnets" {
+      - address_prefixes                              = [
+          - "10.10.2.0/24",
+        ] -> null
+      - default_outbound_access_enabled               = true -> null
+      - id                                            = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/AzureFirewallSubnet" -> null
+      - name                                          = "AzureFirewallSubnet" -> null
+      - private_endpoint_network_policies             = "Disabled" -> null
+      - private_link_service_network_policies_enabled = true -> null
+      - resource_group_name                           = "myTFResourceGroup" -> null
+      - service_endpoint_policy_ids                   = [] -> null
+      - service_endpoints                             = [] -> null
+      - virtual_network_name                          = "vnet-australiaeast" -> null
+        # (1 unchanged attribute hidden)
+    }
+
+  # azurerm_subnet.regional_subnets["australiaeast-gateway"] will be destroyed
+  # (because azurerm_subnet.regional_subnets is not in configuration)
+  - resource "azurerm_subnet" "regional_subnets" {
+      - address_prefixes                              = [
+          - "10.10.3.0/24",
+        ] -> null
+      - default_outbound_access_enabled               = true -> null
+      - id                                            = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/GatewaySubnet" -> null
+      - name                                          = "GatewaySubnet" -> null
+      - private_endpoint_network_policies             = "Disabled" -> null
+      - private_link_service_network_policies_enabled = true -> null
+      - resource_group_name                           = "myTFResourceGroup" -> null
+      - service_endpoint_policy_ids                   = [] -> null
+      - service_endpoints                             = [] -> null
+      - virtual_network_name                          = "vnet-australiaeast" -> null
+        # (1 unchanged attribute hidden)
+    }
+
+  # azurerm_subnet.regional_subnets["australiaeast-management"] will be destroyed
+  # (because azurerm_subnet.regional_subnets is not in configuration)
+  - resource "azurerm_subnet" "regional_subnets" {
+      - address_prefixes                              = [
+          - "10.10.4.0/24",
+        ] -> null
+      - default_outbound_access_enabled               = true -> null
+      - id                                            = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/management-subnet" -> null
+      - name                                          = "management-subnet" -> null
+      - private_endpoint_network_policies             = "Disabled" -> null
+      - private_link_service_network_policies_enabled = true -> null
+      - resource_group_name                           = "myTFResourceGroup" -> null
+      - service_endpoint_policy_ids                   = [] -> null
+      - service_endpoints                             = [] -> null
+      - virtual_network_name                          = "vnet-australiaeast" -> null
+        # (1 unchanged attribute hidden)
+    }
+
+  # azurerm_subnet.regional_subnets["australiaeast-monitoring"] will be destroyed
+  # (because azurerm_subnet.regional_subnets is not in configuration)
+  - resource "azurerm_subnet" "regional_subnets" {
+      - address_prefixes                              = [
+          - "10.10.60.0/24",
+        ] -> null
+      - default_outbound_access_enabled               = true -> null
+      - id                                            = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/monitoring-subnet" -> null
+      - name                                          = "monitoring-subnet" -> null
+      - private_endpoint_network_policies             = "Disabled" -> null
+      - private_link_service_network_policies_enabled = true -> null
+      - resource_group_name                           = "myTFResourceGroup" -> null
+      - service_endpoint_policy_ids                   = [] -> null
+      - service_endpoints                             = [] -> null
+      - virtual_network_name                          = "vnet-australiaeast" -> null
+        # (1 unchanged attribute hidden)
+    }
+
+  # azurerm_subnet.regional_subnets["australiaeast-private_endpoint"] will be destroyed
+  # (because azurerm_subnet.regional_subnets is not in configuration)
+  - resource "azurerm_subnet" "regional_subnets" {
+      - address_prefixes                              = [
+          - "10.10.80.0/24",
+        ] -> null
+      - default_outbound_access_enabled               = true -> null
+      - id                                            = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/private_endpoint-subnet" -> null
+      - name                                          = "private_endpoint-subnet" -> null
+      - private_endpoint_network_policies             = "Disabled" -> null
+      - private_link_service_network_policies_enabled = true -> null
+      - resource_group_name                           = "myTFResourceGroup" -> null
+      - service_endpoint_policy_ids                   = [] -> null
+      - service_endpoints                             = [] -> null
+      - virtual_network_name                          = "vnet-australiaeast" -> null
+        # (1 unchanged attribute hidden)
+    }
+
+  # azurerm_subnet.regional_subnets["australiaeast-web"] will be destroyed
+  # (because azurerm_subnet.regional_subnets is not in configuration)
+  - resource "azurerm_subnet" "regional_subnets" {
+      - address_prefixes                              = [
+          - "10.10.10.0/24",
+        ] -> null
+      - default_outbound_access_enabled               = true -> null
+      - id                                            = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/web-subnet" -> null
+      - name                                          = "web-subnet" -> null
+      - private_endpoint_network_policies             = "Disabled" -> null
+      - private_link_service_network_policies_enabled = true -> null
+      - resource_group_name                           = "myTFResourceGroup" -> null
+      - service_endpoint_policy_ids                   = [] -> null
+      - service_endpoints                             = [] -> null
+      - virtual_network_name                          = "vnet-australiaeast" -> null
+        # (1 unchanged attribute hidden)
+    }
+
+  # azurerm_subnet.regional_subnets["australiaeast-worker"] will be destroyed
+  # (because azurerm_subnet.regional_subnets is not in configuration)
+  - resource "azurerm_subnet" "regional_subnets" {
+      - address_prefixes                              = [
+          - "10.10.40.0/24",
+        ] -> null
+      - default_outbound_access_enabled               = true -> null
+      - id                                            = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/worker-subnet" -> null
+      - name                                          = "worker-subnet" -> null
+      - private_endpoint_network_policies             = "Disabled" -> null
+      - private_link_service_network_policies_enabled = true -> null
+      - resource_group_name                           = "myTFResourceGroup" -> null
+      - service_endpoint_policy_ids                   = [] -> null
+      - service_endpoints                             = [] -> null
+      - virtual_network_name                          = "vnet-australiaeast" -> null
+        # (1 unchanged attribute hidden)
+    }
+
+  # azurerm_subnet.regional_subnets["centralindia-api"] will be destroyed
+  # (because azurerm_subnet.regional_subnets is not in configuration)
+  - resource "azurerm_subnet" "regional_subnets" {
+      - address_prefixes                              = [
+          - "10.20.30.0/24",
+        ] -> null
+      - default_outbound_access_enabled               = true -> null
+      - id                                            = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/api-subnet" -> null
+      - name                                          = "api-subnet" -> null
+      - private_endpoint_network_policies             = "Disabled" -> null
+      - private_link_service_network_policies_enabled = true -> null
+      - resource_group_name                           = "myTFResourceGroup" -> null
+      - service_endpoint_policy_ids                   = [] -> null
+      - service_endpoints                             = [] -> null
+      - virtual_network_name                          = "vnet-centralindia" -> null
+        # (1 unchanged attribute hidden)
+    }
+
+  # azurerm_subnet.regional_subnets["centralindia-app"] will be destroyed
+  # (because azurerm_subnet.regional_subnets is not in configuration)
+  - resource "azurerm_subnet" "regional_subnets" {
+      - address_prefixes                              = [
+          - "10.20.20.0/24",
+        ] -> null
+      - default_outbound_access_enabled               = true -> null
+      - id                                            = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/app-subnet" -> null
+      - name                                          = "app-subnet" -> null
+      - private_endpoint_network_policies             = "Disabled" -> null
+      - private_link_service_network_policies_enabled = true -> null
+      - resource_group_name                           = "myTFResourceGroup" -> null
+      - service_endpoint_policy_ids                   = [] -> null
+      - service_endpoints                             = [] -> null
+      - virtual_network_name                          = "vnet-centralindia" -> null
+        # (1 unchanged attribute hidden)
+    }
+
+  # azurerm_subnet.regional_subnets["centralindia-bastion"] will be destroyed
+  # (because azurerm_subnet.regional_subnets is not in configuration)
+  - resource "azurerm_subnet" "regional_subnets" {
+      - address_prefixes                              = [
+          - "10.20.1.0/24",
+        ] -> null
+      - default_outbound_access_enabled               = true -> null
+      - id                                            = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/AzureBastionSubnet" -> null
+      - name                                          = "AzureBastionSubnet" -> null
+      - private_endpoint_network_policies             = "Disabled" -> null
+      - private_link_service_network_policies_enabled = true -> null
+      - resource_group_name                           = "myTFResourceGroup" -> null
+      - service_endpoint_policy_ids                   = [] -> null
+      - service_endpoints                             = [] -> null
+      - virtual_network_name                          = "vnet-centralindia" -> null
+        # (1 unchanged attribute hidden)
+    }
+
+  # azurerm_subnet.regional_subnets["centralindia-cicd"] will be destroyed
+  # (because azurerm_subnet.regional_subnets is not in configuration)
+  - resource "azurerm_subnet" "regional_subnets" {
+      - address_prefixes                              = [
+          - "10.20.70.0/24",
+        ] -> null
+      - default_outbound_access_enabled               = true -> null
+      - id                                            = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/cicd-subnet" -> null
+      - name                                          = "cicd-subnet" -> null
+      - private_endpoint_network_policies             = "Disabled" -> null
+      - private_link_service_network_policies_enabled = true -> null
+      - resource_group_name                           = "myTFResourceGroup" -> null
+      - service_endpoint_policy_ids                   = [] -> null
+      - service_endpoints                             = [] -> null
+      - virtual_network_name                          = "vnet-centralindia" -> null
+        # (1 unchanged attribute hidden)
+    }
+
+  # azurerm_subnet.regional_subnets["centralindia-db"] will be destroyed
+  # (because azurerm_subnet.regional_subnets is not in configuration)
+  - resource "azurerm_subnet" "regional_subnets" {
+      - address_prefixes                              = [
+          - "10.20.50.0/24",
+        ] -> null
+      - default_outbound_access_enabled               = true -> null
+      - id                                            = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/db-subnet" -> null
+      - name                                          = "db-subnet" -> null
+      - private_endpoint_network_policies             = "Disabled" -> null
+      - private_link_service_network_policies_enabled = true -> null
+      - resource_group_name                           = "myTFResourceGroup" -> null
+      - service_endpoint_policy_ids                   = [] -> null
+      - service_endpoints                             = [] -> null
+      - virtual_network_name                          = "vnet-centralindia" -> null
+        # (1 unchanged attribute hidden)
+    }
+
+  # azurerm_subnet.regional_subnets["centralindia-firewall"] will be destroyed
+  # (because azurerm_subnet.regional_subnets is not in configuration)
+  - resource "azurerm_subnet" "regional_subnets" {
+      - address_prefixes                              = [
+          - "10.20.2.0/24",
+        ] -> null
+      - default_outbound_access_enabled               = true -> null
+      - id                                            = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/AzureFirewallSubnet" -> null
+      - name                                          = "AzureFirewallSubnet" -> null
+      - private_endpoint_network_policies             = "Disabled" -> null
+      - private_link_service_network_policies_enabled = true -> null
+      - resource_group_name                           = "myTFResourceGroup" -> null
+      - service_endpoint_policy_ids                   = [] -> null
+      - service_endpoints                             = [] -> null
+      - virtual_network_name                          = "vnet-centralindia" -> null
+        # (1 unchanged attribute hidden)
+    }
+
+  # azurerm_subnet.regional_subnets["centralindia-gateway"] will be destroyed
+  # (because azurerm_subnet.regional_subnets is not in configuration)
+  - resource "azurerm_subnet" "regional_subnets" {
+      - address_prefixes                              = [
+          - "10.20.3.0/24",
+        ] -> null
+      - default_outbound_access_enabled               = true -> null
+      - id                                            = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/GatewaySubnet" -> null
+      - name                                          = "GatewaySubnet" -> null
+      - private_endpoint_network_policies             = "Disabled" -> null
+      - private_link_service_network_policies_enabled = true -> null
+      - resource_group_name                           = "myTFResourceGroup" -> null
+      - service_endpoint_policy_ids                   = [] -> null
+      - service_endpoints                             = [] -> null
+      - virtual_network_name                          = "vnet-centralindia" -> null
+        # (1 unchanged attribute hidden)
+    }
+
+  # azurerm_subnet.regional_subnets["centralindia-management"] will be destroyed
+  # (because azurerm_subnet.regional_subnets is not in configuration)
+  - resource "azurerm_subnet" "regional_subnets" {
+      - address_prefixes                              = [
+          - "10.20.4.0/24",
+        ] -> null
+      - default_outbound_access_enabled               = true -> null
+      - id                                            = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/management-subnet" -> null
+      - name                                          = "management-subnet" -> null
+      - private_endpoint_network_policies             = "Disabled" -> null
+      - private_link_service_network_policies_enabled = true -> null
+      - resource_group_name                           = "myTFResourceGroup" -> null
+      - service_endpoint_policy_ids                   = [] -> null
+      - service_endpoints                             = [] -> null
+      - virtual_network_name                          = "vnet-centralindia" -> null
+        # (1 unchanged attribute hidden)
+    }
+
+  # azurerm_subnet.regional_subnets["centralindia-monitoring"] will be destroyed
+  # (because azurerm_subnet.regional_subnets is not in configuration)
+  - resource "azurerm_subnet" "regional_subnets" {
+      - address_prefixes                              = [
+          - "10.20.60.0/24",
+        ] -> null
+      - default_outbound_access_enabled               = true -> null
+      - id                                            = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/monitoring-subnet" -> null
+      - name                                          = "monitoring-subnet" -> null
+      - private_endpoint_network_policies             = "Disabled" -> null
+      - private_link_service_network_policies_enabled = true -> null
+      - resource_group_name                           = "myTFResourceGroup" -> null
+      - service_endpoint_policy_ids                   = [] -> null
+      - service_endpoints                             = [] -> null
+      - virtual_network_name                          = "vnet-centralindia" -> null
+        # (1 unchanged attribute hidden)
+    }
+
+  # azurerm_subnet.regional_subnets["centralindia-private_endpoint"] will be destroyed
+  # (because azurerm_subnet.regional_subnets is not in configuration)
+  - resource "azurerm_subnet" "regional_subnets" {
+      - address_prefixes                              = [
+          - "10.20.80.0/24",
+        ] -> null
+      - default_outbound_access_enabled               = true -> null
+      - id                                            = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/private_endpoint-subnet" -> null
+      - name                                          = "private_endpoint-subnet" -> null
+      - private_endpoint_network_policies             = "Disabled" -> null
+      - private_link_service_network_policies_enabled = true -> null
+      - resource_group_name                           = "myTFResourceGroup" -> null
+      - service_endpoint_policy_ids                   = [] -> null
+      - service_endpoints                             = [] -> null
+      - virtual_network_name                          = "vnet-centralindia" -> null
+        # (1 unchanged attribute hidden)
+    }
+
+  # azurerm_subnet.regional_subnets["centralindia-web"] will be destroyed
+  # (because azurerm_subnet.regional_subnets is not in configuration)
+  - resource "azurerm_subnet" "regional_subnets" {
+      - address_prefixes                              = [
+          - "10.20.10.0/24",
+        ] -> null
+      - default_outbound_access_enabled               = true -> null
+      - id                                            = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/web-subnet" -> null
+      - name                                          = "web-subnet" -> null
+      - private_endpoint_network_policies             = "Disabled" -> null
+      - private_link_service_network_policies_enabled = true -> null
+      - resource_group_name                           = "myTFResourceGroup" -> null
+      - service_endpoint_policy_ids                   = [] -> null
+      - service_endpoints                             = [] -> null
+      - virtual_network_name                          = "vnet-centralindia" -> null
+        # (1 unchanged attribute hidden)
+    }
+
+  # azurerm_subnet.regional_subnets["centralindia-worker"] will be destroyed
+  # (because azurerm_subnet.regional_subnets is not in configuration)
+  - resource "azurerm_subnet" "regional_subnets" {
+      - address_prefixes                              = [
+          - "10.20.40.0/24",
+        ] -> null
+      - default_outbound_access_enabled               = true -> null
+      - id                                            = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/worker-subnet" -> null
+      - name                                          = "worker-subnet" -> null
+      - private_endpoint_network_policies             = "Disabled" -> null
+      - private_link_service_network_policies_enabled = true -> null
+      - resource_group_name                           = "myTFResourceGroup" -> null
+      - service_endpoint_policy_ids                   = [] -> null
+      - service_endpoints                             = [] -> null
+      - virtual_network_name                          = "vnet-centralindia" -> null
+        # (1 unchanged attribute hidden)
+    }
+
+  # azurerm_subnet_nat_gateway_association.nat_subnet_assoc["australiaeast-api"] will be destroyed
+  # (because azurerm_subnet_nat_gateway_association.nat_subnet_assoc is not in configuration)
+  - resource "azurerm_subnet_nat_gateway_association" "nat_subnet_assoc" {
+      - id             = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/api-subnet" -> null
+      - nat_gateway_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/natGateways/nat-australiaeast" -> null
+      - subnet_id      = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/api-subnet" -> null
+    }
+
+  # azurerm_subnet_nat_gateway_association.nat_subnet_assoc["australiaeast-app"] will be destroyed
+  # (because azurerm_subnet_nat_gateway_association.nat_subnet_assoc is not in configuration)
+  - resource "azurerm_subnet_nat_gateway_association" "nat_subnet_assoc" {
+      - id             = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/app-subnet" -> null
+      - nat_gateway_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/natGateways/nat-australiaeast" -> null
+      - subnet_id      = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/app-subnet" -> null
+    }
+
+  # azurerm_subnet_nat_gateway_association.nat_subnet_assoc["australiaeast-cicd"] will be destroyed
+  # (because azurerm_subnet_nat_gateway_association.nat_subnet_assoc is not in configuration)
+  - resource "azurerm_subnet_nat_gateway_association" "nat_subnet_assoc" {
+      - id             = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/cicd-subnet" -> null
+      - nat_gateway_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/natGateways/nat-australiaeast" -> null
+      - subnet_id      = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/cicd-subnet" -> null
+    }
+
+  # azurerm_subnet_nat_gateway_association.nat_subnet_assoc["australiaeast-web"] will be destroyed
+  # (because azurerm_subnet_nat_gateway_association.nat_subnet_assoc is not in configuration)
+  - resource "azurerm_subnet_nat_gateway_association" "nat_subnet_assoc" {
+      - id             = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/web-subnet" -> null
+      - nat_gateway_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/natGateways/nat-australiaeast" -> null
+      - subnet_id      = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/web-subnet" -> null
+    }
+
+  # azurerm_subnet_nat_gateway_association.nat_subnet_assoc["australiaeast-worker"] will be destroyed
+  # (because azurerm_subnet_nat_gateway_association.nat_subnet_assoc is not in configuration)
+  - resource "azurerm_subnet_nat_gateway_association" "nat_subnet_assoc" {
+      - id             = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/worker-subnet" -> null
+      - nat_gateway_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/natGateways/nat-australiaeast" -> null
+      - subnet_id      = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/worker-subnet" -> null
+    }
+
+  # azurerm_subnet_nat_gateway_association.nat_subnet_assoc["centralindia-api"] will be destroyed
+  # (because azurerm_subnet_nat_gateway_association.nat_subnet_assoc is not in configuration)
+  - resource "azurerm_subnet_nat_gateway_association" "nat_subnet_assoc" {
+      - id             = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/api-subnet" -> null
+      - nat_gateway_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/natGateways/nat-centralindia" -> null
+      - subnet_id      = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/api-subnet" -> null
+    }
+
+  # azurerm_subnet_nat_gateway_association.nat_subnet_assoc["centralindia-app"] will be destroyed
+  # (because azurerm_subnet_nat_gateway_association.nat_subnet_assoc is not in configuration)
+  - resource "azurerm_subnet_nat_gateway_association" "nat_subnet_assoc" {
+      - id             = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/app-subnet" -> null
+      - nat_gateway_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/natGateways/nat-centralindia" -> null
+      - subnet_id      = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/app-subnet" -> null
+    }
+
+  # azurerm_subnet_nat_gateway_association.nat_subnet_assoc["centralindia-cicd"] will be destroyed
+  # (because azurerm_subnet_nat_gateway_association.nat_subnet_assoc is not in configuration)
+  - resource "azurerm_subnet_nat_gateway_association" "nat_subnet_assoc" {
+      - id             = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/cicd-subnet" -> null
+      - nat_gateway_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/natGateways/nat-centralindia" -> null
+      - subnet_id      = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/cicd-subnet" -> null
+    }
+
+  # azurerm_subnet_nat_gateway_association.nat_subnet_assoc["centralindia-web"] will be destroyed
+  # (because azurerm_subnet_nat_gateway_association.nat_subnet_assoc is not in configuration)
+  - resource "azurerm_subnet_nat_gateway_association" "nat_subnet_assoc" {
+      - id             = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/web-subnet" -> null
+      - nat_gateway_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/natGateways/nat-centralindia" -> null
+      - subnet_id      = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/web-subnet" -> null
+    }
+
+  # azurerm_subnet_nat_gateway_association.nat_subnet_assoc["centralindia-worker"] will be destroyed
+  # (because azurerm_subnet_nat_gateway_association.nat_subnet_assoc is not in configuration)
+  - resource "azurerm_subnet_nat_gateway_association" "nat_subnet_assoc" {
+      - id             = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/worker-subnet" -> null
+      - nat_gateway_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/natGateways/nat-centralindia" -> null
+      - subnet_id      = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/worker-subnet" -> null
+    }
+
+  # azurerm_subnet_network_security_group_association.regional_assoc["australiaeast-api"] will be destroyed
+  # (because azurerm_subnet_network_security_group_association.regional_assoc is not in configuration)
+  - resource "azurerm_subnet_network_security_group_association" "regional_assoc" {
+      - id                        = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/api-subnet" -> null
+      - network_security_group_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-australiaeast-api" -> null
+      - subnet_id                 = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/api-subnet" -> null
+    }
+
+  # azurerm_subnet_network_security_group_association.regional_assoc["australiaeast-app"] will be destroyed
+  # (because azurerm_subnet_network_security_group_association.regional_assoc is not in configuration)
+  - resource "azurerm_subnet_network_security_group_association" "regional_assoc" {
+      - id                        = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/app-subnet" -> null
+      - network_security_group_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-australiaeast-app" -> null
+      - subnet_id                 = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/app-subnet" -> null
+    }
+
+  # azurerm_subnet_network_security_group_association.regional_assoc["australiaeast-cicd"] will be destroyed
+  # (because azurerm_subnet_network_security_group_association.regional_assoc is not in configuration)
+  - resource "azurerm_subnet_network_security_group_association" "regional_assoc" {
+      - id                        = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/cicd-subnet" -> null
+      - network_security_group_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-australiaeast-cicd" -> null
+      - subnet_id                 = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/cicd-subnet" -> null
+    }
+
+  # azurerm_subnet_network_security_group_association.regional_assoc["australiaeast-db"] will be destroyed
+  # (because azurerm_subnet_network_security_group_association.regional_assoc is not in configuration)
+  - resource "azurerm_subnet_network_security_group_association" "regional_assoc" {
+      - id                        = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/db-subnet" -> null
+      - network_security_group_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-australiaeast-db" -> null
+      - subnet_id                 = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/db-subnet" -> null
+    }
+
+  # azurerm_subnet_network_security_group_association.regional_assoc["australiaeast-management"] will be destroyed
+  # (because azurerm_subnet_network_security_group_association.regional_assoc is not in configuration)
+  - resource "azurerm_subnet_network_security_group_association" "regional_assoc" {
+      - id                        = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/management-subnet" -> null
+      - network_security_group_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-australiaeast-management" -> null
+      - subnet_id                 = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/management-subnet" -> null
+    }
+
+  # azurerm_subnet_network_security_group_association.regional_assoc["australiaeast-monitoring"] will be destroyed
+  # (because azurerm_subnet_network_security_group_association.regional_assoc is not in configuration)
+  - resource "azurerm_subnet_network_security_group_association" "regional_assoc" {
+      - id                        = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/monitoring-subnet" -> null
+      - network_security_group_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-australiaeast-monitoring" -> null
+      - subnet_id                 = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/monitoring-subnet" -> null
+    }
+
+  # azurerm_subnet_network_security_group_association.regional_assoc["australiaeast-private_endpoint"] will be destroyed
+  # (because azurerm_subnet_network_security_group_association.regional_assoc is not in configuration)
+  - resource "azurerm_subnet_network_security_group_association" "regional_assoc" {
+      - id                        = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/private_endpoint-subnet" -> null
+      - network_security_group_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-australiaeast-private_endpoint" -> null
+      - subnet_id                 = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/private_endpoint-subnet" -> null
+    }
+
+  # azurerm_subnet_network_security_group_association.regional_assoc["australiaeast-web"] will be destroyed
+  # (because azurerm_subnet_network_security_group_association.regional_assoc is not in configuration)
+  - resource "azurerm_subnet_network_security_group_association" "regional_assoc" {
+      - id                        = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/web-subnet" -> null
+      - network_security_group_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-australiaeast-web" -> null
+      - subnet_id                 = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/web-subnet" -> null
+    }
+
+  # azurerm_subnet_network_security_group_association.regional_assoc["australiaeast-worker"] will be destroyed
+  # (because azurerm_subnet_network_security_group_association.regional_assoc is not in configuration)
+  - resource "azurerm_subnet_network_security_group_association" "regional_assoc" {
+      - id                        = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/worker-subnet" -> null
+      - network_security_group_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-australiaeast-worker" -> null
+      - subnet_id                 = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/worker-subnet" -> null
+    }
+
+  # azurerm_subnet_network_security_group_association.regional_assoc["centralindia-api"] will be destroyed
+  # (because azurerm_subnet_network_security_group_association.regional_assoc is not in configuration)
+  - resource "azurerm_subnet_network_security_group_association" "regional_assoc" {
+      - id                        = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/api-subnet" -> null
+      - network_security_group_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-centralindia-api" -> null
+      - subnet_id                 = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/api-subnet" -> null
+    }
+
+  # azurerm_subnet_network_security_group_association.regional_assoc["centralindia-app"] will be destroyed
+  # (because azurerm_subnet_network_security_group_association.regional_assoc is not in configuration)
+  - resource "azurerm_subnet_network_security_group_association" "regional_assoc" {
+      - id                        = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/app-subnet" -> null
+      - network_security_group_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-centralindia-app" -> null
+      - subnet_id                 = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/app-subnet" -> null
+    }
+
+  # azurerm_subnet_network_security_group_association.regional_assoc["centralindia-cicd"] will be destroyed
+  # (because azurerm_subnet_network_security_group_association.regional_assoc is not in configuration)
+  - resource "azurerm_subnet_network_security_group_association" "regional_assoc" {
+      - id                        = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/cicd-subnet" -> null
+      - network_security_group_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-centralindia-cicd" -> null
+      - subnet_id                 = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/cicd-subnet" -> null
+    }
+
+  # azurerm_subnet_network_security_group_association.regional_assoc["centralindia-db"] will be destroyed
+  # (because azurerm_subnet_network_security_group_association.regional_assoc is not in configuration)
+  - resource "azurerm_subnet_network_security_group_association" "regional_assoc" {
+      - id                        = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/db-subnet" -> null
+      - network_security_group_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-centralindia-db" -> null
+      - subnet_id                 = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/db-subnet" -> null
+    }
+
+  # azurerm_subnet_network_security_group_association.regional_assoc["centralindia-management"] will be destroyed
+  # (because azurerm_subnet_network_security_group_association.regional_assoc is not in configuration)
+  - resource "azurerm_subnet_network_security_group_association" "regional_assoc" {
+      - id                        = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/management-subnet" -> null
+      - network_security_group_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-centralindia-management" -> null
+      - subnet_id                 = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/management-subnet" -> null
+    }
+
+  # azurerm_subnet_network_security_group_association.regional_assoc["centralindia-monitoring"] will be destroyed
+  # (because azurerm_subnet_network_security_group_association.regional_assoc is not in configuration)
+  - resource "azurerm_subnet_network_security_group_association" "regional_assoc" {
+      - id                        = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/monitoring-subnet" -> null
+      - network_security_group_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-centralindia-monitoring" -> null
+      - subnet_id                 = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/monitoring-subnet" -> null
+    }
+
+  # azurerm_subnet_network_security_group_association.regional_assoc["centralindia-private_endpoint"] will be destroyed
+  # (because azurerm_subnet_network_security_group_association.regional_assoc is not in configuration)
+  - resource "azurerm_subnet_network_security_group_association" "regional_assoc" {
+      - id                        = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/private_endpoint-subnet" -> null
+      - network_security_group_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-centralindia-private_endpoint" -> null
+      - subnet_id                 = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/private_endpoint-subnet" -> null
+    }
+
+  # azurerm_subnet_network_security_group_association.regional_assoc["centralindia-web"] will be destroyed
+  # (because azurerm_subnet_network_security_group_association.regional_assoc is not in configuration)
+  - resource "azurerm_subnet_network_security_group_association" "regional_assoc" {
+      - id                        = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/web-subnet" -> null
+      - network_security_group_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-centralindia-web" -> null
+      - subnet_id                 = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/web-subnet" -> null
+    }
+
+  # azurerm_subnet_network_security_group_association.regional_assoc["centralindia-worker"] will be destroyed
+  # (because azurerm_subnet_network_security_group_association.regional_assoc is not in configuration)
+  - resource "azurerm_subnet_network_security_group_association" "regional_assoc" {
+      - id                        = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/worker-subnet" -> null
+      - network_security_group_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/networkSecurityGroups/nsg-centralindia-worker" -> null
+      - subnet_id                 = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/worker-subnet" -> null
+    }
+
+  # azurerm_subnet_route_table_association.private_assoc["australiaeast-db"] will be destroyed
+  # (because azurerm_subnet_route_table_association.private_assoc is not in configuration)
+  - resource "azurerm_subnet_route_table_association" "private_assoc" {
+      - id             = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/db-subnet" -> null
+      - route_table_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/routeTables/rt-private-australiaeast" -> null
+      - subnet_id      = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/db-subnet" -> null
+    }
+
+  # azurerm_subnet_route_table_association.private_assoc["australiaeast-management"] will be destroyed
+  # (because azurerm_subnet_route_table_association.private_assoc is not in configuration)
+  - resource "azurerm_subnet_route_table_association" "private_assoc" {
+      - id             = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/management-subnet" -> null
+      - route_table_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/routeTables/rt-private-australiaeast" -> null
+      - subnet_id      = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/management-subnet" -> null
+    }
+
+  # azurerm_subnet_route_table_association.private_assoc["australiaeast-private_endpoint"] will be destroyed
+  # (because azurerm_subnet_route_table_association.private_assoc is not in configuration)
+  - resource "azurerm_subnet_route_table_association" "private_assoc" {
+      - id             = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/private_endpoint-subnet" -> null
+      - route_table_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/routeTables/rt-private-australiaeast" -> null
+      - subnet_id      = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/private_endpoint-subnet" -> null
+    }
+
+  # azurerm_subnet_route_table_association.private_assoc["centralindia-db"] will be destroyed
+  # (because azurerm_subnet_route_table_association.private_assoc is not in configuration)
+  - resource "azurerm_subnet_route_table_association" "private_assoc" {
+      - id             = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/db-subnet" -> null
+      - route_table_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/routeTables/rt-private-centralindia" -> null
+      - subnet_id      = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/db-subnet" -> null
+    }
+
+  # azurerm_subnet_route_table_association.private_assoc["centralindia-management"] will be destroyed
+  # (because azurerm_subnet_route_table_association.private_assoc is not in configuration)
+  - resource "azurerm_subnet_route_table_association" "private_assoc" {
+      - id             = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/management-subnet" -> null
+      - route_table_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/routeTables/rt-private-centralindia" -> null
+      - subnet_id      = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/management-subnet" -> null
+    }
+
+  # azurerm_subnet_route_table_association.private_assoc["centralindia-private_endpoint"] will be destroyed
+  # (because azurerm_subnet_route_table_association.private_assoc is not in configuration)
+  - resource "azurerm_subnet_route_table_association" "private_assoc" {
+      - id             = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/private_endpoint-subnet" -> null
+      - route_table_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/routeTables/rt-private-centralindia" -> null
+      - subnet_id      = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/private_endpoint-subnet" -> null
+    }
+
+  # azurerm_subnet_route_table_association.public_assoc["australiaeast-api"] will be destroyed
+  # (because azurerm_subnet_route_table_association.public_assoc is not in configuration)
+  - resource "azurerm_subnet_route_table_association" "public_assoc" {
+      - id             = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/api-subnet" -> null
+      - route_table_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/routeTables/rt-public-australiaeast" -> null
+      - subnet_id      = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/api-subnet" -> null
+    }
+
+  # azurerm_subnet_route_table_association.public_assoc["australiaeast-app"] will be destroyed
+  # (because azurerm_subnet_route_table_association.public_assoc is not in configuration)
+  - resource "azurerm_subnet_route_table_association" "public_assoc" {
+      - id             = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/app-subnet" -> null
+      - route_table_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/routeTables/rt-public-australiaeast" -> null
+      - subnet_id      = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/app-subnet" -> null
+    }
+
+  # azurerm_subnet_route_table_association.public_assoc["australiaeast-cicd"] will be destroyed
+  # (because azurerm_subnet_route_table_association.public_assoc is not in configuration)
+  - resource "azurerm_subnet_route_table_association" "public_assoc" {
+      - id             = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/cicd-subnet" -> null
+      - route_table_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/routeTables/rt-public-australiaeast" -> null
+      - subnet_id      = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/cicd-subnet" -> null
+    }
+
+  # azurerm_subnet_route_table_association.public_assoc["australiaeast-web"] will be destroyed
+  # (because azurerm_subnet_route_table_association.public_assoc is not in configuration)
+  - resource "azurerm_subnet_route_table_association" "public_assoc" {
+      - id             = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/web-subnet" -> null
+      - route_table_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/routeTables/rt-public-australiaeast" -> null
+      - subnet_id      = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/web-subnet" -> null
+    }
+
+  # azurerm_subnet_route_table_association.public_assoc["australiaeast-worker"] will be destroyed
+  # (because azurerm_subnet_route_table_association.public_assoc is not in configuration)
+  - resource "azurerm_subnet_route_table_association" "public_assoc" {
+      - id             = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/worker-subnet" -> null
+      - route_table_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/routeTables/rt-public-australiaeast" -> null
+      - subnet_id      = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/subnets/worker-subnet" -> null
+    }
+
+  # azurerm_subnet_route_table_association.public_assoc["centralindia-api"] will be destroyed
+  # (because azurerm_subnet_route_table_association.public_assoc is not in configuration)
+  - resource "azurerm_subnet_route_table_association" "public_assoc" {
+      - id             = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/api-subnet" -> null
+      - route_table_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/routeTables/rt-public-centralindia" -> null
+      - subnet_id      = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/api-subnet" -> null
+    }
+
+  # azurerm_subnet_route_table_association.public_assoc["centralindia-app"] will be destroyed
+  # (because azurerm_subnet_route_table_association.public_assoc is not in configuration)
+  - resource "azurerm_subnet_route_table_association" "public_assoc" {
+      - id             = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/app-subnet" -> null
+      - route_table_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/routeTables/rt-public-centralindia" -> null
+      - subnet_id      = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/app-subnet" -> null
+    }
+
+  # azurerm_subnet_route_table_association.public_assoc["centralindia-cicd"] will be destroyed
+  # (because azurerm_subnet_route_table_association.public_assoc is not in configuration)
+  - resource "azurerm_subnet_route_table_association" "public_assoc" {
+      - id             = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/cicd-subnet" -> null
+      - route_table_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/routeTables/rt-public-centralindia" -> null
+      - subnet_id      = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/cicd-subnet" -> null
+    }
+
+  # azurerm_subnet_route_table_association.public_assoc["centralindia-web"] will be destroyed
+  # (because azurerm_subnet_route_table_association.public_assoc is not in configuration)
+  - resource "azurerm_subnet_route_table_association" "public_assoc" {
+      - id             = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/web-subnet" -> null
+      - route_table_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/routeTables/rt-public-centralindia" -> null
+      - subnet_id      = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/web-subnet" -> null
+    }
+
+  # azurerm_subnet_route_table_association.public_assoc["centralindia-worker"] will be destroyed
+  # (because azurerm_subnet_route_table_association.public_assoc is not in configuration)
+  - resource "azurerm_subnet_route_table_association" "public_assoc" {
+      - id             = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/worker-subnet" -> null
+      - route_table_id = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/routeTables/rt-public-centralindia" -> null
+      - subnet_id      = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/subnets/worker-subnet" -> null
+    }
+
+  # azurerm_virtual_network_peering.aus_to_central will be destroyed
+  # (because azurerm_virtual_network_peering.aus_to_central is not in configuration)
+  - resource "azurerm_virtual_network_peering" "aus_to_central" {
+      - allow_forwarded_traffic                = true -> null
+      - allow_gateway_transit                  = false -> null
+      - allow_virtual_network_access           = true -> null
+      - id                                     = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/virtualNetworkPeerings/australiaeast-to-centralindia" -> null
+      - local_subnet_names                     = [] -> null
+      - name                                   = "australiaeast-to-centralindia" -> null
+      - only_ipv6_peering_enabled              = false -> null
+      - peer_complete_virtual_networks_enabled = true -> null
+      - remote_subnet_names                    = [] -> null
+      - remote_virtual_network_id              = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia" -> null
+      - resource_group_name                    = "myTFResourceGroup" -> null
+      - use_remote_gateways                    = false -> null
+      - virtual_network_name                   = "vnet-australiaeast" -> null
+    }
+
+  # azurerm_virtual_network_peering.central_to_aus will be destroyed
+  # (because azurerm_virtual_network_peering.central_to_aus is not in configuration)
+  - resource "azurerm_virtual_network_peering" "central_to_aus" {
+      - allow_forwarded_traffic                = true -> null
+      - allow_gateway_transit                  = false -> null
+      - allow_virtual_network_access           = true -> null
+      - id                                     = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/virtualNetworkPeerings/centralindia-to-australiaeast" -> null
+      - local_subnet_names                     = [] -> null
+      - name                                   = "centralindia-to-australiaeast" -> null
+      - only_ipv6_peering_enabled              = false -> null
+      - peer_complete_virtual_networks_enabled = true -> null
+      - remote_subnet_names                    = [] -> null
+      - remote_virtual_network_id              = "/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast" -> null
+      - resource_group_name                    = "myTFResourceGroup" -> null
+      - use_remote_gateways                    = false -> null
+      - virtual_network_name                   = "vnet-centralindia" -> null
+    }
+
+Plan: 0 to add, 0 to change, 104 to destroy.
+
+Changes to Outputs:
+  ~ debug_tags = {
+      ~ creation_run_id = "467" -> "468"
+      ~ creation_time   = "2026-05-22T10:32:29Z" -> (known after apply)
+        # (3 unchanged attributes hidden)
+    }
+
+Warning: Argument is deprecated
+
+  with azurerm_storage_account_customer_managed_key.prodmyapp_sa_cmk,
+  on main.tf line 457, in resource "azurerm_storage_account_customer_managed_key" "prodmyapp_sa_cmk":
+ 457:   key_vault_id       = azurerm_key_vault.prodmyapp.id
+
+`key_vault_id` has been deprecated in favour of `key_vault_key_id` and will
+be removed in v5.0 of the AzureRM provider
+
+(and 2 more similar warnings elsewhere)
+
+─────────────────────────────────────────────────────────────────────────────
+
+Saved the plan to: tfplan
+
+To perform exactly these actions, run the following command to apply:
+    terraform apply "tfplan"
+Releasing state lock. This may take a few moments...
