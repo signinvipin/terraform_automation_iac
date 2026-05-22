@@ -1,0 +1,22 @@
+Acquiring state lock. This may take a few moments...
+azurerm_route_table.public_rt["centralindia"]: Creating...
+azurerm_route_table.public_rt["centralindia"]: Creation complete after 5s [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/routeTables/rt-public-centralindia]
+azurerm_route_table.public_rt["australiaeast"]: Creating...
+azurerm_route_table.public_rt["australiaeast"]: Creation complete after 4s [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/routeTables/rt-public-australiaeast]
+azurerm_route_table.private_rt["centralindia"]: Creating...
+azurerm_route_table.private_rt["centralindia"]: Creation complete after 4s [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/routeTables/rt-private-centralindia]
+azurerm_route_table.private_rt["australiaeast"]: Creating...
+azurerm_route_table.private_rt["australiaeast"]: Creation complete after 4s [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/routeTables/rt-private-australiaeast]
+Releasing state lock. This may take a few moments...
+
+Apply complete! Resources: 4 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+debug_tags = {
+  "creation_run_id" = "475"
+  "creation_time" = "2026-05-22T17:38:10Z"
+  "deployment_id" = "prodmyapp"
+  "environment" = "prod"
+  "managed_by" = "terraform"
+}
