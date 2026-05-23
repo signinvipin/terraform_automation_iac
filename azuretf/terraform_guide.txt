@@ -5156,7 +5156,58 @@ Use: NAT Gateway, no custom UDR
 > Private workloads
 Use: Azure Firewall/NVA/no outbound route
 ---------------------------------------------------------------------------------------------------------------
+Strong Recommendation For Azure Terraform
 
+For networking-heavy infra:
+
+Always use depends_on for:
+
+Bastion
+Firewall
+Private Endpoint
+Application Gateway
+NIC
+VMSS
+Load Balancer
+AKS
+
+when created in same apply as VNet/subnets.
+
+Azure hates massive parallel networking deployment.
+
+Better production approach:
+
+Stage 1
+
+Core networking
+
+RG
+VNet
+Subnets
+NSGs
+Routes
+
+
+Stage 2
+
+Security/network services
+
+Bastion
+Firewall
+NAT
+Private DNS
+
+
+Stage 3
+
+Compute
+
+NICs
+VMs
+VMSS
+AKS
+
+This dramatically reduces Azure race conditions.
 ---------------------------------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------------------------------

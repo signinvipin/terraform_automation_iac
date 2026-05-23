@@ -2151,6 +2151,11 @@ resource "azurerm_bastion_host" "main" {
     public_ip_address_id = azurerm_public_ip.bastion_pip.id
   }
 
+  depends_on = [
+    azurerm_subnet.regional_subnets,
+    azurerm_virtual_network.regional_vnets
+  ]
+
   tags = merge(local.common_tags, {
     Name = "bastian-host-main"
   })
@@ -2178,6 +2183,11 @@ resource "azurerm_network_interface" "jumpbox_nic" {
     subnet_id                     = azurerm_subnet.regional_subnets["centralindia-management"].id
     private_ip_address_allocation = "Dynamic"
   }
+
+  depends_on = [
+    azurerm_subnet.regional_subnets,
+    azurerm_virtual_network.regional_vnets
+  ]
 
   tags = merge(local.common_tags, {
     Name = "jumpbox-nic"
