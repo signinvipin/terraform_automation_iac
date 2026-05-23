@@ -2137,6 +2137,18 @@ resource "azurerm_public_ip" "bastion_pip" {
   }
 }
 
+resource "time_sleep" "wait_for_network" {
+  depends_on = [
+    azurerm_virtual_network.regional_vnets,
+    azurerm_subnet.regional_subnets,
+    azurerm_subnet_network_security_group_association.regional_assoc,
+    azurerm_subnet_route_table_association.private_assoc,
+    azurerm_subnet_route_table_association.public_assoc
+  ]
+
+  create_duration = "120s"
+}
+
 # Bastion Host
 resource "azurerm_bastion_host" "main" {
   name                = "bastion-prodmyapp"
@@ -2153,7 +2165,8 @@ resource "azurerm_bastion_host" "main" {
 
   depends_on = [
     azurerm_subnet.regional_subnets,
-    azurerm_virtual_network.regional_vnets
+    azurerm_virtual_network.regional_vnets,
+    time_sleep.wait_for_network
   ]
 
   tags = merge(local.common_tags, {
