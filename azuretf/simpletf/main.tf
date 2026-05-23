@@ -2136,7 +2136,7 @@ resource "azurerm_public_ip" "bastion_pip" {
     ]
   }
 }
-/*
+
 # Bastion Host
 resource "azurerm_bastion_host" "main" {
   name                = "bastion-prodmyapp"
@@ -2170,7 +2170,7 @@ resource "azurerm_bastion_host" "main" {
 
 ## Jumpbox VM
 # compute.tf
-
+/*
 # NIC for Jumpbox/Linux VM
 
 resource "azurerm_network_interface" "jumpbox_nic" {
