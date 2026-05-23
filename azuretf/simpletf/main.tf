@@ -1770,6 +1770,13 @@ resource "azurerm_subnet" "regional_subnets" {
   ]...)
 
   #name = "${each.value.subnet_name}-subnet"
+  # Commented out above naming way as Azure has special reserved subnets. These subnets have strict rules.
+
+  # Reserved infrastructure subnets - 
+  # Subnet - `GatewaySubnet`, Azure Requirement - NO NSG allowed.
+  # Subnet - `AzureFirewallSubnet`, Azure Requirement - NO NSG allowed.
+  # Subnet - `AzureBastionSubnet`, Azure Requirement - Only specific NSG rules allowed.
+  # Below method names bastian, firewall, gateway subnets as per rule like AzureFirewallSubnet etc.
 
   name = (
     each.value.subnet_name == "bastion" ?
@@ -2064,7 +2071,7 @@ resource "azurerm_virtual_network_peering" "aus_to_central" {
 Implement compute in THIS order > 1. Bastion Host > 2. Jumpbox VM > 3. Private App VM > 4. VMSS > 5. Load Balancer
 > 6. Autoscaling > 7. Managed Identity > 8. Monitoring > 9. AKS
 */
-/*
+
 # Private DNS Implementation
 # dns.tf
 
@@ -2072,7 +2079,16 @@ resource "azurerm_private_dns_zone" "kv_dns" {
   name                = "privatelink.vaultcore.azure.net"
   resource_group_name = azurerm_resource_group.prodmyapp.name
 
-  tags = local.common_tags
+  tags = merge(local.common_tags, {
+    Name = "kv_dns_pvt"
+  })
+
+  lifecycle {
+    ignore_changes = [
+      tags["creation_run_id"],
+      tags["creation_time"]
+    ]
+  }
 }
 
 resource "azurerm_private_dns_zone_virtual_network_link" "kv_dns_links" {
@@ -2085,7 +2101,16 @@ resource "azurerm_private_dns_zone_virtual_network_link" "kv_dns_links" {
 
   registration_enabled = false
 
-  tags = local.common_tags
+  tags = merge(local.common_tags, {
+    Name = "pvt-dns-vnet-link${each.key}"
+  })
+
+  lifecycle {
+    ignore_changes = [
+      tags["creation_run_id"],
+      tags["creation_time"]
+    ]
+  }
 }
 
 # Azure Bastion
@@ -2100,7 +2125,16 @@ resource "azurerm_public_ip" "bastion_pip" {
   allocation_method = "Static"
   sku               = "Standard"
 
-  tags = local.common_tags
+  tags = merge(local.common_tags, {
+    Name = "bastian-pubip"
+  })
+
+  lifecycle {
+    ignore_changes = [
+      tags["creation_run_id"],
+      tags["creation_time"]
+    ]
+  }
 }
 
 # Bastion Host
@@ -2117,10 +2151,19 @@ resource "azurerm_bastion_host" "main" {
     public_ip_address_id = azurerm_public_ip.bastion_pip.id
   }
 
-  tags = local.common_tags
+  tags = merge(local.common_tags, {
+    Name = "bastian-host-main"
+  })
+
+  lifecycle {
+    ignore_changes = [
+      tags["creation_run_id"],
+      tags["creation_time"]
+    ]
+  }
 }
 
-# Jumpbox VM
+## Jumpbox VM
 # compute.tf
 
 # NIC for Jumpbox/Linux VM
@@ -2136,11 +2179,20 @@ resource "azurerm_network_interface" "jumpbox_nic" {
     private_ip_address_allocation = "Dynamic"
   }
 
-  tags = local.common_tags
+  tags = merge(local.common_tags, {
+    Name = "jumpbox-nic"
+  })
+
+  lifecycle {
+    ignore_changes = [
+      tags["creation_run_id"],
+      tags["creation_time"]
+    ]
+  }
 }
 
 # Linux VM
-
+/*
 resource "azurerm_linux_virtual_machine" "jumpbox" {
   name                = "vm-jumpbox"
   resource_group_name = azurerm_resource_group.prodmyapp.name
@@ -2176,7 +2228,16 @@ resource "azurerm_linux_virtual_machine" "jumpbox" {
     type = "SystemAssigned"
   }
 
-  tags = local.common_tags
+  tags = merge(local.common_tags, {
+    Name = "jumpbox-vm"
+  })
+
+  lifecycle {
+    ignore_changes = [
+      tags["creation_run_id"],
+      tags["creation_time"]
+    ]
+  }
 }
 
 */
