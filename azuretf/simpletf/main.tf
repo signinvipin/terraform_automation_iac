@@ -1799,7 +1799,7 @@ resource "azurerm_subnet" "regional_subnets" {
 
 
 # Role based dedicated NSGs (Per Subnet)
-/*
+
 resource "azurerm_network_security_group" "regional_nsgs" {
 
   for_each = merge([
@@ -1831,7 +1831,7 @@ resource "azurerm_network_security_group" "regional_nsgs" {
 }
 
 # Subnet-NSG Associations
-
+/*
 resource "azurerm_subnet_network_security_group_association" "regional_assoc" {
 
   for_each = {
@@ -2116,7 +2116,7 @@ resource "azurerm_private_dns_zone_virtual_network_link" "kv_dns_links" {
 # Azure Bastion
 
 # Azure Bastion Public IP
-
+*/
 resource "azurerm_public_ip" "bastion_pip" {
   name                = "pip-bastion"
   location            = azurerm_resource_group.prodmyapp.location
@@ -2137,6 +2137,7 @@ resource "azurerm_public_ip" "bastion_pip" {
   }
 }
 
+
 resource "time_sleep" "wait_for_network" {
   depends_on = [
     azurerm_virtual_network.regional_vnets,
@@ -2148,6 +2149,7 @@ resource "time_sleep" "wait_for_network" {
 
   create_duration = "120s"
 }
+/*
 
 # Bastion Host
 resource "azurerm_bastion_host" "main" {
