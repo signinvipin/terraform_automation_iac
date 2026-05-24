@@ -1755,7 +1755,7 @@ resource "azurerm_virtual_network" "regional_vnets" {
 }
 
 # Enterprise Role-Based Subnets
-/
+
 resource "azurerm_subnet" "regional_subnets" {
 
   for_each = merge([
