@@ -2117,9 +2117,10 @@ resource "azurerm_private_dns_zone_virtual_network_link" "kv_dns_links" {
 
 # Azure Bastion Public IP
 */
+/*
 resource "azurerm_public_ip" "bastion_pip" {
   name                = "pip-bastion"
-  location            = azurerm_resource_group.prodmyapp.location
+  location            = local.regions["centralindia"].location
   resource_group_name = azurerm_resource_group.prodmyapp.name
 
   allocation_method = "Static"
@@ -2136,7 +2137,7 @@ resource "azurerm_public_ip" "bastion_pip" {
     ]
   }
 }
-
+*/
 
 resource "time_sleep" "wait_for_network" {
   depends_on = [
@@ -2152,11 +2153,11 @@ resource "time_sleep" "wait_for_network" {
 
 
 
-
+/*
 # Bastion Host
 resource "azurerm_bastion_host" "main" {
   name                = "bastion-prodmyapp"
-  location            = azurerm_resource_group.prodmyapp.location
+  location            = local.regions["centralindia"].location
   resource_group_name = azurerm_resource_group.prodmyapp.name
 
   sku = "Standard"
@@ -2185,6 +2186,7 @@ resource "azurerm_bastion_host" "main" {
     ]
   }
 }
+*/
 
 ## Jumpbox VM
 # compute.tf
