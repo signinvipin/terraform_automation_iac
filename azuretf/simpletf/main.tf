@@ -2029,7 +2029,7 @@ resource "azurerm_subnet_route_table_association" "private_assoc" {
     split("-", each.key)[0]
   ].id
 }
-
+*/
 # VNet Peering 
 
 # Central India > Australia East
@@ -2061,7 +2061,7 @@ resource "azurerm_virtual_network_peering" "aus_to_central" {
   allow_virtual_network_access = true
   allow_forwarded_traffic      = true
 }
-*/
+
 
 ###               PHASE-IX               ###
 
