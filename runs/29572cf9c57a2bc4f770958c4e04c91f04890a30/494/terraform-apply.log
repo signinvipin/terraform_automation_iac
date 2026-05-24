@@ -1,0 +1,28 @@
+Acquiring state lock. This may take a few moments...
+time_sleep.wait_for_network: Creating...
+time_sleep.wait_for_network: Still creating... [00m10s elapsed]
+time_sleep.wait_for_network: Still creating... [00m20s elapsed]
+time_sleep.wait_for_network: Still creating... [00m30s elapsed]
+time_sleep.wait_for_network: Still creating... [00m40s elapsed]
+time_sleep.wait_for_network: Still creating... [00m50s elapsed]
+time_sleep.wait_for_network: Still creating... [01m00s elapsed]
+time_sleep.wait_for_network: Still creating... [01m10s elapsed]
+time_sleep.wait_for_network: Still creating... [01m20s elapsed]
+time_sleep.wait_for_network: Still creating... [01m30s elapsed]
+time_sleep.wait_for_network: Still creating... [01m40s elapsed]
+time_sleep.wait_for_network: Still creating... [01m50s elapsed]
+time_sleep.wait_for_network: Still creating... [02m00s elapsed]
+time_sleep.wait_for_network: Creation complete after 2m0s [id=2026-05-24T13:10:18Z]
+Releasing state lock. This may take a few moments...
+
+Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+debug_tags = {
+  "creation_run_id" = "494"
+  "creation_time" = "2026-05-24T13:08:18Z"
+  "deployment_id" = "prodmyapp"
+  "environment" = "prod"
+  "managed_by" = "terraform"
+}
