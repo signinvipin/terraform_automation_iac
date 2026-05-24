@@ -1831,7 +1831,7 @@ resource "azurerm_network_security_group" "regional_nsgs" {
 }
 
 # Subnet-NSG Associations
-/*
+
 resource "azurerm_subnet_network_security_group_association" "regional_assoc" {
 
   for_each = {
@@ -1922,7 +1922,7 @@ resource "azurerm_nat_gateway" "regional_nat" {
 }
 
 # Associate Public IP to NAT
-
+/*
 resource "azurerm_nat_gateway_public_ip_association" "nat_assoc" {
 
   for_each = local.regions
