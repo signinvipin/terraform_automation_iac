@@ -2137,7 +2137,7 @@ resource "azurerm_public_ip" "bastion_pip" {
   }
 }
 
-
+/*
 resource "time_sleep" "wait_for_network" {
   depends_on = [
     azurerm_virtual_network.regional_vnets,
@@ -2149,6 +2149,7 @@ resource "time_sleep" "wait_for_network" {
 
   create_duration = "120s"
 }
+*/
 /*
 
 # Bastion Host
