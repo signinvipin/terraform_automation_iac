@@ -5209,6 +5209,25 @@ AKS
 
 This dramatically reduces Azure race conditions.
 ---------------------------------------------------------------------------------------------------------------
+Troubleshooting Error
+
+--
+azurerm_bastion_host.main: Creating...
+
+Error: creating Bastion Host (Subscription: "***"
+Resource Group Name: "myTFResourceGroup"
+Bastion Host Name: "bastion-prodmyapp"): performing CreateOrUpdate: unexpected status 400 (400 Bad Request)with error:
+InvalidResourceReference: Resource 
+`/subscriptions/***/resourceGroups/MYTFRESOURCEGROUP/providers/Microsoft.Network/virtualNetworks/VNET-CENTRALINDIA` referenced by
+resource /subscriptions/***/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/bastionHosts/bastion-prodmyapp
+was not found. Please make sure that the referenced resource exists, and that both resources are in the same region.
+
+  with azurerm_bastion_host.main,
+  on main.tf line 2157, in resource "azurerm_bastion_host" "main":
+2157: resource "azurerm_bastion_host" "main" {
+
+--
+
 
 ---------------------------------------------------------------------------------------------------------------
  ?????????????how to centralize this lifecycle block using modules so you don’t repeat it across 20+ resources. 

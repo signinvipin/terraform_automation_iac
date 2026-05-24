@@ -1879,7 +1879,7 @@ resource "azurerm_public_ip" "nat_gateway_pubip" {
   for_each = local.regions
 
   name                = "nat-pubip-${each.key}"
-  location            = each.key
+  location            = each.value.location
   resource_group_name = azurerm_resource_group.prodmyapp.name
 
   allocation_method = "Static"
@@ -1904,7 +1904,7 @@ resource "azurerm_nat_gateway" "regional_nat" {
   for_each = local.regions
 
   name                = "nat-${each.key}"
-  location            = each.key
+  location            = each.value.location
   resource_group_name = azurerm_resource_group.prodmyapp.name
 
   sku_name = "Standard"
@@ -1955,7 +1955,7 @@ resource "azurerm_route_table" "public_rt" {
   for_each = local.regions
 
   name                = "rt-public-${each.key}"
-  location            = each.key
+  location            = each.value.location
   resource_group_name = azurerm_resource_group.prodmyapp.name
 
   route {
@@ -1982,7 +1982,7 @@ resource "azurerm_route_table" "private_rt" {
   for_each = local.regions
 
   name                = "rt-private-${each.key}"
-  location            = each.key
+  location            = each.value.location
   resource_group_name = azurerm_resource_group.prodmyapp.name
 
   tags = merge(local.common_tags, {
@@ -2126,7 +2126,7 @@ resource "azurerm_public_ip" "bastion_pip" {
   sku               = "Standard"
 
   tags = merge(local.common_tags, {
-    Name = "bastian-pubip"
+    Name = "bastion-pubip"
   })
 
   lifecycle {
@@ -2174,7 +2174,8 @@ resource "azurerm_bastion_host" "main" {
   ]
 
   tags = merge(local.common_tags, {
-    Name = "bastian-host-main"
+    Name = "bastion-host-main"
+    Name = "bastion-host-main"
   })
 
   lifecycle {
