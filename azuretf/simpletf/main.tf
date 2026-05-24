@@ -2151,7 +2151,7 @@ resource "time_sleep" "wait_for_network" {
 }
 
 
-/*
+
 
 # Bastion Host
 resource "azurerm_bastion_host" "main" {
@@ -2184,7 +2184,7 @@ resource "azurerm_bastion_host" "main" {
     ]
   }
 }
-*/
+
 ## Jumpbox VM
 # compute.tf
 /*
