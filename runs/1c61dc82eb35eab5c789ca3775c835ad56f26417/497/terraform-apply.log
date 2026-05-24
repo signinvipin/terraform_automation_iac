@@ -1,0 +1,17 @@
+Acquiring state lock. This may take a few moments...
+azurerm_public_ip.bastion_pip: Destroying... [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/publicIPAddresses/pip-bastion]
+azurerm_public_ip.bastion_pip: Still destroying... [id=/subscriptions/2b2f02f7-dde2-47db-974c-....Network/publicIPAddresses/pip-bastion, 00m10s elapsed]
+azurerm_public_ip.bastion_pip: Destruction complete after 10s
+Releasing state lock. This may take a few moments...
+
+Apply complete! Resources: 0 added, 0 changed, 1 destroyed.
+
+Outputs:
+
+debug_tags = {
+  "creation_run_id" = "497"
+  "creation_time" = "2026-05-24T19:01:43Z"
+  "deployment_id" = "prodmyapp"
+  "environment" = "prod"
+  "managed_by" = "terraform"
+}
