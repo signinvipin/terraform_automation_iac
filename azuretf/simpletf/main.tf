@@ -1728,7 +1728,7 @@ locals {
 }
 
 # Multi-Region VNets
-
+/*
 resource "azurerm_virtual_network" "regional_vnets" {
 
   for_each = local.regions
@@ -2061,7 +2061,7 @@ resource "azurerm_virtual_network_peering" "aus_to_central" {
   allow_virtual_network_access = true
   allow_forwarded_traffic      = true
 }
-
+*/
 
 ###               PHASE-IX               ###
 
@@ -2074,7 +2074,7 @@ Implement compute in THIS order > 1. Bastion Host > 2. Jumpbox VM > 3. Private A
 
 # Private DNS Implementation
 # dns.tf
-
+/*
 resource "azurerm_private_dns_zone" "kv_dns" {
   name                = "privatelink.vaultcore.azure.net"
   resource_group_name = azurerm_resource_group.prodmyapp.name
@@ -2180,7 +2180,7 @@ resource "azurerm_bastion_host" "main" {
     ]
   }
 }
-
+*/
 ## Jumpbox VM
 # compute.tf
 /*
