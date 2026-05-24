@@ -1997,7 +1997,7 @@ resource "azurerm_route_table" "private_rt" {
   }
 }
 
-/*
+
 # Associate Public Route Table and Subnet
 resource "azurerm_subnet_route_table_association" "public_assoc" {
 
@@ -2029,7 +2029,7 @@ resource "azurerm_subnet_route_table_association" "private_assoc" {
     split("-", each.key)[0]
   ].id
 }
-*/
+
 # VNet Peering 
 
 # Central India > Australia East
