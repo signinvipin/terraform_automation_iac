@@ -1,0 +1,22 @@
+Acquiring state lock. This may take a few moments...
+azurerm_virtual_network_peering.aus_to_central: Creating...
+azurerm_virtual_network_peering.aus_to_central: Still creating... [00m10s elapsed]
+azurerm_virtual_network_peering.aus_to_central: Still creating... [00m20s elapsed]
+azurerm_virtual_network_peering.aus_to_central: Creation complete after 28s [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-australiaeast/virtualNetworkPeerings/australiaeast-to-centralindia]
+azurerm_virtual_network_peering.central_to_aus: Creating...
+azurerm_virtual_network_peering.central_to_aus: Still creating... [00m10s elapsed]
+azurerm_virtual_network_peering.central_to_aus: Still creating... [00m20s elapsed]
+azurerm_virtual_network_peering.central_to_aus: Creation complete after 27s [id=/subscriptions/2b2f02f7-dde2-47db-974c-47d2182721ae/resourceGroups/myTFResourceGroup/providers/Microsoft.Network/virtualNetworks/vnet-centralindia/virtualNetworkPeerings/centralindia-to-australiaeast]
+Releasing state lock. This may take a few moments...
+
+Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+debug_tags = {
+  "creation_run_id" = "492"
+  "creation_time" = "2026-05-24T12:52:26Z"
+  "deployment_id" = "prodmyapp"
+  "environment" = "prod"
+  "managed_by" = "terraform"
+}
