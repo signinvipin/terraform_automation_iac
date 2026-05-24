@@ -1922,7 +1922,7 @@ resource "azurerm_nat_gateway" "regional_nat" {
 }
 
 # Associate Public IP to NAT
-/*
+
 resource "azurerm_nat_gateway_public_ip_association" "nat_assoc" {
 
   for_each = local.regions
@@ -1997,7 +1997,7 @@ resource "azurerm_route_table" "private_rt" {
   }
 }
 
-
+/*
 # Associate Public Route Table and Subnet
 resource "azurerm_subnet_route_table_association" "public_assoc" {
 
@@ -2150,6 +2150,7 @@ resource "time_sleep" "wait_for_network" {
   create_duration = "120s"
 }
 */
+
 /*
 
 # Bastion Host
