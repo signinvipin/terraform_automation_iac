@@ -2074,7 +2074,7 @@ Implement compute in THIS order > 1. Bastion Host > 2. Jumpbox VM > 3. Private A
 
 # Private DNS Implementation
 # dns.tf
-/*
+
 resource "azurerm_private_dns_zone" "kv_dns" {
   name                = "privatelink.vaultcore.azure.net"
   resource_group_name = azurerm_resource_group.prodmyapp.name
@@ -2114,10 +2114,9 @@ resource "azurerm_private_dns_zone_virtual_network_link" "kv_dns_links" {
 }
 
 # Azure Bastion
+# Azure Bastion requires `Bastion Host`, `Bastion Public IP`, `AzureBastionSubnet`, `VNet` - "ALL in SAME REGION".
 
 # Azure Bastion Public IP
-*/
-
 resource "azurerm_public_ip" "bastion_pip" {
   name                = "pip-bastion"
   location            = local.regions["centralindia"].location
@@ -2150,8 +2149,6 @@ resource "time_sleep" "wait_for_network" {
 
   create_duration = "120s"
 }
-
-
 
 
 # Bastion Host
@@ -2190,12 +2187,11 @@ resource "azurerm_bastion_host" "main" {
 
 ## Jumpbox VM
 # compute.tf
-/*
-# NIC for Jumpbox/Linux VM
 
+# NIC for Jumpbox/Linux VM
 resource "azurerm_network_interface" "jumpbox_nic" {
   name                = "nic-jumpbox"
-  location            = azurerm_resource_group.prodmyapp.location
+  location            = local.regions["centralindia"].location
   resource_group_name = azurerm_resource_group.prodmyapp.name
 
   ip_configuration {
@@ -2220,7 +2216,7 @@ resource "azurerm_network_interface" "jumpbox_nic" {
     ]
   }
 }
-*/
+
 # Linux VM
 /*
 resource "azurerm_linux_virtual_machine" "jumpbox" {
