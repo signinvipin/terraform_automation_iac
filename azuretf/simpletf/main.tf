@@ -2192,12 +2192,12 @@ resource "azurerm_bastion_host" "main" {
 # NIC for Jumpbox/Linux VM
 resource "azurerm_network_interface" "jumpbox_nic" {
   name                = "nic-jumpbox"
-  location            = local.regions["centralindia"].location
+  location            = local.regions["australiaeast"].location
   resource_group_name = azurerm_resource_group.prodmyapp.name
 
   ip_configuration {
     name                          = "internal"
-    subnet_id                     = azurerm_subnet.regional_subnets["centralindia-management"].id
+    subnet_id                     = azurerm_subnet.regional_subnets["australiaeast-management"].id
     private_ip_address_allocation = "Dynamic"
   }
 
@@ -2219,7 +2219,8 @@ resource "azurerm_network_interface" "jumpbox_nic" {
 }
 
 # Implement Multi-region Disk Encryption Set (DES) for Jumpbox/Linux
-
+# Must be used with regional Key Vaults and regional CMKs
+/*
 resource "azurerm_disk_encryption_set" "regional_des" {
 
   for_each = local.regions
@@ -2248,6 +2249,7 @@ resource "azurerm_disk_encryption_set" "regional_des" {
   }
 }
 
+
 # Disk Encryption Set identity must be granted an RBAC role on the Key Vault.
 resource "azurerm_role_assignment" "regional_des_kv_crypto" {
 
@@ -2268,13 +2270,14 @@ resource "time_sleep" "wait_for_regional_des_rbac" {
     azurerm_role_assignment.regional_des_kv_crypto
   ]
 }
+*/
 
 # Linux VM
 
 resource "azurerm_linux_virtual_machine" "jumpbox" {
   name                = "vm-jumpbox"
   resource_group_name = azurerm_resource_group.prodmyapp.name
-  location            = local.regions["centralindia"].location
+  location            = local.regions["australiaeast"].location
   size                = local.selected_vm_size
 
   admin_username = "azureuser"
@@ -2293,7 +2296,7 @@ resource "azurerm_linux_virtual_machine" "jumpbox" {
   os_disk {
     caching                = "ReadWrite"
     storage_account_type   = "StandardSSD_LRS"
-    disk_encryption_set_id = azurerm_disk_encryption_set.regional_des["centralindia"].id
+    disk_encryption_set_id = azurerm_disk_encryption_set.prod_des.id
   }
 
   source_image_reference {
