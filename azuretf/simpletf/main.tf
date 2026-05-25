@@ -2270,7 +2270,7 @@ resource "time_sleep" "wait_for_regional_des_rbac" {
 }
 
 # Linux VM
-/*
+
 resource "azurerm_linux_virtual_machine" "jumpbox" {
   name                = "vm-jumpbox"
   resource_group_name = azurerm_resource_group.prodmyapp.name
@@ -2293,7 +2293,7 @@ resource "azurerm_linux_virtual_machine" "jumpbox" {
   os_disk {
     caching                = "ReadWrite"
     storage_account_type   = "StandardSSD_LRS"
-    disk_encryption_set_id = azurerm_disk_encryption_set.prod_des.id
+    disk_encryption_set_id = azurerm_disk_encryption_set.regional_des["centralindia"].id
   }
 
   source_image_reference {
@@ -2324,4 +2324,4 @@ resource "azurerm_linux_virtual_machine" "jumpbox" {
     ]
   }
 }
-*/
+
