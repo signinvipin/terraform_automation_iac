@@ -2218,8 +2218,59 @@ resource "azurerm_network_interface" "jumpbox_nic" {
   }
 }
 
-# Linux VM
+# Implement Multi-region Disk Encryption Set (DES) for Jumpbox/Linux
 
+resource "azurerm_disk_encryption_set" "regional_des" {
+
+  for_each = local.regions
+
+  name = "des-${each.key}"
+
+  location = each.value.location
+
+  resource_group_name = azurerm_resource_group.prodmyapp.name
+
+  key_vault_key_id = azurerm_key_vault_key.prodmyapp_key.id
+
+  identity {
+    type = "SystemAssigned"
+  }
+
+  tags = merge(local.common_tags, {
+    Name = "des-${each.key}"
+  })
+
+  lifecycle {
+    ignore_changes = [
+      tags["creation_run_id"],
+      tags["creation_time"]
+    ]
+  }
+}
+
+# Disk Encryption Set identity must be granted an RBAC role on the Key Vault.
+resource "azurerm_role_assignment" "regional_des_kv_crypto" {
+
+  for_each = azurerm_disk_encryption_set.regional_des
+
+  scope                = azurerm_key_vault.prodmyapp.id
+  role_definition_name = "Key Vault Crypto Service Encryption User"
+
+  principal_id = each.value.identity[0].principal_id
+}
+
+# Allow propagation time for RBAC
+resource "time_sleep" "wait_for_regional_des_rbac" {
+
+  create_duration = "180s"
+
+  depends_on = [
+    azurerm_role_assignment.regional_des_kv_crypto
+  ]
+}
+
+# Linux VM
+/*
 resource "azurerm_linux_virtual_machine" "jumpbox" {
   name                = "vm-jumpbox"
   resource_group_name = azurerm_resource_group.prodmyapp.name
@@ -2273,4 +2324,4 @@ resource "azurerm_linux_virtual_machine" "jumpbox" {
     ]
   }
 }
-
+*/
