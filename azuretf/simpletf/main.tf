@@ -1559,6 +1559,7 @@ resource "azurerm_windows_virtual_machine" "windows_vm" {
     storage_account_type   = "Standard_LRS"
     disk_encryption_set_id = azurerm_disk_encryption_set.prod_des.id
   }
+  # Standard_LRS - standard hdd LRS
 
 
   # for production 
@@ -2218,12 +2219,12 @@ resource "azurerm_network_interface" "jumpbox_nic" {
 }
 
 # Linux VM
-/*
+
 resource "azurerm_linux_virtual_machine" "jumpbox" {
   name                = "vm-jumpbox"
   resource_group_name = azurerm_resource_group.prodmyapp.name
-  location            = azurerm_resource_group.prodmyapp.location
-  size                = "Standard_B2s"
+  location            = local.regions["centralindia"].location
+  size                = local.selected_vm_size
 
   admin_username = "azureuser"
 
@@ -2235,19 +2236,26 @@ resource "azurerm_linux_virtual_machine" "jumpbox" {
 
   admin_ssh_key {
     username   = "azureuser"
-    public_key = file("~/.ssh/id_rsa.pub")
+    public_key = file("/opt/ssh_keys/prodmyapp_vm1.pub")
   }
 
   os_disk {
-    caching              = "ReadWrite"
-    storage_account_type = "StandardSSD_LRS"
+    caching                = "ReadWrite"
+    storage_account_type   = "StandardSSD_LRS"
+    disk_encryption_set_id = azurerm_disk_encryption_set.prod_des.id
   }
 
   source_image_reference {
-    publisher = "Canonical"
-    offer     = "0001-com-ubuntu-server-jammy"
-    sku       = "22_04-lts"
-    version   = "latest"
+    publisher = local.vm_images[var.environment].linux.publisher
+    offer     = local.vm_images[var.environment].linux.offer
+    sku       = local.vm_images[var.environment].linux.sku
+    version   = local.vm_images[var.environment].linux.version
+  }
+
+  plan {
+    name      = local.vm_images[var.environment].linux.sku
+    product   = local.vm_images[var.environment].linux.offer
+    publisher = local.vm_images[var.environment].linux.publisher
   }
 
   identity {
@@ -2266,4 +2274,3 @@ resource "azurerm_linux_virtual_machine" "jumpbox" {
   }
 }
 
-*/
